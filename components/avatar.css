@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .container_avatar{
     margin: auto;
@@ -17,7 +12,7 @@
 }
 
 .avatar_round_corner .avatar{
-    border-radius: .5rem;
+    border-radius: 8px;
 }
 
 .avatar_lg{
