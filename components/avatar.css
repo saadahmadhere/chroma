@@ -1,0 +1,46 @@
+
+.container_avatar{
+    margin: auto;
+    padding:1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.avatar_circle .avatar{
+    border-radius: 50%;
+}
+
+.avatar_round_corner .avatar{
+    border-radius: 8px;
+}
+
+.avatar_lg{
+    width: 10rem;
+    height: 10rem;
+    font-size: 2.5rem;
+}
+
+.avatar_md{
+    width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
+}
+
+.avatar_sm{
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.5rem;
+}
+
+.avatar_xs{
+    width: 3rem;
+    height: 3rem;
+}
+
+.avatar_text .avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
