@@ -44,7 +44,7 @@ ul{
 
 .nav_item{
     padding: 1rem;
-    color: #777777;    
+    color: var(--link)   
 }
 
 .nav_item a:hover, .nav_item a i:hover{
@@ -61,7 +61,7 @@ ul{
 }
 
 .nav_links_social i{
-    color: #777777
+    color: var(--link)
 }
 
 

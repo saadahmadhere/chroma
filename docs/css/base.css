@@ -1,5 +1,6 @@
 :root{
     --primary-color: #339AF0;
+    --link:#777777; 
     --link-hover: #4DABF7;
     --alert-primary: #9bd9ff;
     --alert-success: #D1E7DD;
