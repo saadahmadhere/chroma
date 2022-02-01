@@ -1,0 +1,25 @@
+:root{
+    --primary-color: #339AF0;
+    --link-hover: #4DABF7;
+    --alert-primary: #9bd9ff;
+    --alert-success: #D1E7DD;
+    --alert-secondary: #E2E3E5;
+    --alert-danger: #F8D7DA;
+    --alert-warning: #FFF3CD;
+    --alert-success-icon: #047040;
+    --alert-danger-icon: #d65959;
+    --alert-warning-icon: #fcd34c;
+    --alert-close-icon: #cec8c8;
+    --avatar-text-background: #bd7070;
+}
+
+/* :root{
+    --blue-one: #50B4F2;
+    --blue-gray: #6699CC;
+        --corn: #FFF275;
+        --mango-tango: #FF8C42;
+        --tart-orange: #FF3C38;
+        --english-red: #A23E48;
+        --black: #141414;
+        --dark-gray: #444444;
+} */
