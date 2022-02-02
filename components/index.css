@@ -1,6 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?Montserrat:wght@600&family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('../docs/css/reset.css');
 @import url('../docs/css/base.css');
 @import url('../docs/css/navbar.css');
 @import url('../components/avatar.css');
+
+html{
+    font-size: 100%;
+}
+
+.main_top, .main_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem 4rem;
+    padding: 1rem;
+}
+
+.main_top h1,.main_bottom h1{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.main_top h1{
+    font-size: calc(1rem + 3.3vw);
+}
+
+.main_bottom h1{
+    font-size: calc(1rem + 2vw);
+}
+
+.main_top p, .main_bottom p{
+    margin-top: .5rem;
+    padding: .5rem;
+    color: var(--content)
+}
+
+.main_top p{
+    font-size: calc(1.275rem + .3vw);
+}
+
+.main_bottom p{
+    font-size: 1.25rem;
+}
+
+.main_top__left{
+    flex: 1;
+    min-width: 300px;
+    
+}
+
+.main_top__right{
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+.library_name{
+    color: var(--primary-color)
+}
+
+.image_main{
+    max-width: 80%;
+    object-fit: cover;
+}
+
+.btn_solid, .btn_outline:hover{
+    background-color: var(--primary-color);
+    color:var(--btn-primary-text);
+}
+
+.btn_outline{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn_solid, .btn_outline{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: 400;
+}
+
+.btn:hover{
+    background-color: var(--link-hover);
+}
+
+@media only screen and (max-width:1000px){
+
+    .main_top{
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 696px){
+    .main_top{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+   .nav_links_about, .nav_logo .logo_text{
+        display: none
+    }
+
+    .nav_logo{
+        font-size: 2rem;
+    }
+    
+}

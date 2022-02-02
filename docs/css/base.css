@@ -2,6 +2,9 @@
     --primary-color: #339AF0;
     --link:#777777; 
     --link-hover: #4DABF7;
+    --heading: #444444;
+    --content: #495057;
+    --btn-primary-text: #fff;
     --alert-primary: #9bd9ff;
     --alert-success: #D1E7DD;
     --alert-secondary: #E2E3E5;
@@ -12,6 +15,7 @@
     --alert-warning-icon: #fcd34c;
     --alert-close-icon: #cec8c8;
     --avatar-text-background: #bd7070;
+    
 }
 
 /* :root{
