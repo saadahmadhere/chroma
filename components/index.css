@@ -6,6 +6,7 @@
 @import url('../docs/css/sidebar.css');
 @import url('../docs/css/doc.css');
 @import url('./avatar.css');
+@import url('./alert.css');
 
 html{
     font-size: 100%;
