@@ -3,7 +3,9 @@
 @import url('../docs/css/reset.css');
 @import url('../docs/css/base.css');
 @import url('../docs/css/navbar.css');
-@import url('../components/avatar.css');
+@import url('../docs/css/sidebar.css');
+@import url('../docs/css/doc.css');
+@import url('./avatar.css');
 
 html{
     font-size: 100%;
@@ -35,7 +37,6 @@ html{
 .main_top p, .main_bottom p{
     margin-top: .5rem;
     padding: .5rem;
-    color: var(--content)
 }
 
 .main_top p{
@@ -107,12 +108,19 @@ html{
         align-items: center;
     }
 
+    .nav{
+        padding: 10px;
+    }
    .nav_links_about, .nav_logo .logo_text{
         display: none
     }
 
     .nav_logo{
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .nav_item{
+        padding: 10px;
     }
     
 }

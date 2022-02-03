@@ -1,13 +1,9 @@
 
-.container_avatar{
-    margin: auto;
-    padding:1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+.avatar{
+    margin: .5rem;
 }
 
-.avatar_circle .avatar{
+.avatar_circle.avatar{
     border-radius: 50%;
 }
 
@@ -38,9 +34,16 @@
     height: 3rem;
 }
 
-.avatar_text .avatar{
+.avatar.avatar_text{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--avatar-text-background)
+}
+
+@media only screen and (max-width: 420px){
+    .container_avatar{
+        flex-direction: column;
+        align-items: center;
+    }
 }

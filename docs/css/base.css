@@ -2,8 +2,11 @@
     --primary-color: #339AF0;
     --link:#777777; 
     --link-hover: #4DABF7;
+    --primary-text-color: #396597;
+    --border: #44444417;;
     --heading: #444444;
     --content: #495057;
+    --box-shadow: #00000009;
     --btn-primary-text: #fff;
     --alert-primary: #9bd9ff;
     --alert-success: #D1E7DD;
@@ -14,7 +17,7 @@
     --alert-danger-icon: #d65959;
     --alert-warning-icon: #fcd34c;
     --alert-close-icon: #cec8c8;
-    --avatar-text-background: #bd7070;
+    --avatar-text-background: #9bd9ff;
     
 }
 

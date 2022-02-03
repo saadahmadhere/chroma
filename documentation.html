@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chroma | Docs</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./components/index.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b9c207240a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="#" class="nav_logo">
+            <i class="fab fa-contao fa-lg"></i>
+            <span class="logo_text">chroma</span> 
+        </a>
+        <ul class='nav_links nav_links_about'>
+            <li class=nav_item>
+                <a href="#">Home</a>
+            </li>
+            <li class="nav_item">
+                <a href="#">Documentation</a>
+            </li>
+        </ul>
+
+        <ul class="nav_links nav_links_social">
+            <li class="nav_item">
+                <a href="#">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="#">
+                    <i class="fab fa-linkedin-in fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="#">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="#">
+                    <i class="fas fa-moon fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="burger">
+            <i class="fas fa-bars fa-lg"></i>
+        </div>
+    </nav>
+    
+    <section class="doc_main">
+        <aside class="sidebar">
+            <div class="sidebar_heading">
+                <h1 class="title">Components</h1>
+            </div>
+            <ul>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                
+            </ul>
+            <!-- <div class="sidebar_component"><a href="#">Avatar</a></div> -->
+        </aside>
+        <main class="doc_main__content">
+
+            <section id="avatar">
+                <div class="section_brief">
+                    <h1 class="component_title">Avatars</h1>
+                    <!-- <p class="sub_title">Alerts are used to when we need to get user's attention immediately.</p> -->
+                    <p class="component_brief">Avatars are used for display pictures, images in cards, email signatures, etc.</p>
+                    <p class="component_description">You can use avatar of 4 different sizes. Use class <code class="code_text">avatar</code> and <code class="code_text">avatar_circle</code> with the<code class="code_text"> img </code> tag for circular avatars. For size, use <code class='code_text'>avatar_xs</code>, <code class='code_text'>avatar_sm</code>, <code class='code_text'>avatar_md</code> and <code class='code_text'>avatar_lg</code>.</p>
+                </div>
+
+                <div class="container_component">
+                    <img class="avatar avatar_circle avatar_lg" src="./assets/girl-face.jpg" alt="girl">
+                    <img class="avatar avatar_circle avatar_md" src="./assets/girl-face.jpg" alt="girl">
+                    <img class="avatar avatar_circle avatar_sm" src="./assets/girl-face.jpg" alt="girl">
+                    <img class="avatar avatar_circle avatar_xs" src="./assets/girl-face.jpg" alt="girl">
+                </div>
+
+                <div class="code_snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2876%2C104%2C126%2C0%29&t=one-light&wt=none&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar_circle%2520avatar_lg%2522%2520src%253D%2522.%252Fassets%252Fgirl-face.jpg%2522%2520alt%253D%2522girl%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar_circle%2520avatar_md%2522%2520src%253D%2522.%252Fassets%252Fgirl-face.jpg%2522%2520alt%253D%2522girl%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar_circle%2520avatar_sm%2522%2520src%253D%2522.%252Fassets%252Fgirl-face.jpg%2522%2520alt%253D%2522girl%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar_circle%2520avatar_xs%2522%2520src%253D%2522.%252Fassets%252Fgirl-face.jpg%2522%2520alt%253D%2522girl%2522%253E%250A"
+                    style="transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                 </div>
+
+                <p class="component_description">You can use avatars for texts too. Use classes <code      class='code_text'>avatar_text</code> in addition to the previous classes. Use the <code      class='code_text'>div</code> tag here.</p>
+                
+                <div class="container_component">
+                    <div class="avatar avatar_text avatar_circle avatar_lg">Text</div>
+                    <div class="avatar avatar_text avatar_circle avatar_md">Text</div>
+                    <div class="avatar avatar_text avatar_circle avatar_sm">Text</div>
+                    <div class="avatar avatar_text avatar_circle avatar_xs">Text</div>
+                </div>
+
+                <div class="code_snippet"> 
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2876%2C104%2C126%2C0%29&t=one-light&wt=none&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar_text%2520avatar_circle%2520avatar_lg%2522%253EText%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar_text%2520avatar_circle%2520avatar_md%2522%253EText%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar_text%2520avatar_circle%2520avatar_sm%2522%253EText%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar_text%2520avatar_circle%2520avatar_xs%2522%253EText%253C%252Fdiv%253E%250A"
+                        style="transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+                
+            
+
+            </div>
+        </main>
+    </section>
+</body>
+</html>
