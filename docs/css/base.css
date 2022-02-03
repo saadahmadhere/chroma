@@ -3,9 +3,11 @@
     --link:#777777; 
     --link-hover: #4DABF7;
     --primary-text-color: #396597;
-    --border: #44444417;;
+    --border: #44444417;
+    --border-dark: #24222285;
     --heading: #444444;
     --content: #495057;
+    --code-snippet-bg: #f4f9ff;
     --box-shadow: #00000009;
     --btn-primary-text: #fff;
     --alert-primary: #9bd9ff;

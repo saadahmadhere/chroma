@@ -18,14 +18,19 @@
 
 .doc_main__content .component_brief{
     font-size: calc(1.275rem + .3vw);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--heading);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
+.section{
+    border-bottom: 2px solid var(--border-dark);
+}
+
 .component_description{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.25em;
 }
 
 .code_text{
@@ -45,14 +50,14 @@
 }
 
 .code_snippet{
-    box-sizing: border-box;
     width: 100%;
     max-height: 300px;
     padding: 1rem 0;
-    background-color: #FAFAFA;
+    background-color: var(--code-snippet-bg);
     margin: 2rem 0;
     overflow: auto;
 }
+
 .code_snippet iframe{
     width: 100%;
     border: none;
