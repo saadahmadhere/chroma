@@ -7,9 +7,14 @@
 @import url('../docs/css/doc.css');
 @import url('./avatar.css');
 @import url('./alert.css');
+@import url('./badge.css');
 
 html{
     font-size: 100%;
+}
+
+body{
+    letter-spacing: .025em;
 }
 
 .main_top, .main_bottom{

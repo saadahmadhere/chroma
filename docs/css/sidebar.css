@@ -5,7 +5,7 @@
     padding: 1rem 1rem 1rem 2rem;
     overflow-y: scroll;
     position: sticky;
-    left:0
+    top:0
 }
 
 .sidebar .sidebar_heading{
