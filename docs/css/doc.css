@@ -16,12 +16,20 @@
     color: var(--heading)
 }
 
-.doc_main__content .component_brief{
+.doc_main__content .component_brief,
+.doc_main__content .component_subtitle{
     font-size: calc(1.275rem + .3vw);
-    font-weight: 400;
     color: var(--heading);
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.doc_main__content .component_subtitle{
+    font-weight: 400;
+}
+
+.doc_main__content .component_brief{
+    font-weight: 300;
 }
 
 .section{
