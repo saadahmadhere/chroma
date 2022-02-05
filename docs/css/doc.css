@@ -17,7 +17,7 @@
 }
 
 .doc_main__content .component_brief,
-.doc_main__content .component_subtitle{
+.component_subtitle{
     font-size: calc(1.275rem + .3vw);
     color: var(--heading);
     margin-top: 1rem;
@@ -26,6 +26,10 @@
 
 .doc_main__content .component_subtitle{
     font-weight: 400;
+}
+
+.doc_main__content .component_subtitle{
+    margin-top: 3rem;
 }
 
 .doc_main__content .component_brief{

@@ -8,6 +8,7 @@
 @import url('./avatar.css');
 @import url('./alert.css');
 @import url('./badge.css');
+@import url('./button.css');
 
 html{
     font-size: 100%;
@@ -78,28 +79,7 @@ body{
     object-fit: cover;
 }
 
-.btn_solid, .btn_outline:hover{
-    background-color: var(--primary-color);
-    color:var(--btn-primary-text);
-}
 
-.btn_outline{
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-.btn_solid, .btn_outline{
-    display: inline-block;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.3rem;
-    font-weight: 400;
-}
-
-.btn:hover{
-    background-color: var(--link-hover);
-}
 
 @media only screen and (max-width:1000px){
 
