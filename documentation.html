@@ -21,10 +21,10 @@
         </a>
         <ul class='nav_links nav_links_about'>
             <li class=nav_item>
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
             </li>
             <li class="nav_item">
-                <a href="#">Documentation</a>
+                <a href="./documentation.html">Documentation</a>
             </li>
         </ul>
 
@@ -65,7 +65,7 @@
                 <li class="sidebar_component"><a href="#">Avatar</a></li>
                 <li class="sidebar_component"><a href="#">Alert</a></li>
                 <li class="sidebar_component"><a href="#">Badges</a></li>
-                <li class="sidebar_component"><a href="#">Avatar</a></li>
+                <li class="sidebar_component"><a href="#button">Buttons</a></li>
                 <li class="sidebar_component"><a href="#">Avatar</a></li>
                 <li class="sidebar_component"><a href="#">Avatar</a></li>
                 <li class="sidebar_component"><a href="#">Avatar</a></li>
@@ -261,9 +261,97 @@
                 </div>
 
             </section>
+
+            <section id="button" class="section">
+                <div class="section_brief">
+                    <h1 class="component_title">Buttons</h1>
+                    <p class="component_brief">Use Chroma's buttons for cards, call to actions, forms, dialogs, navigation, etc.</p>
+                    <p class="component_description">Buttons come in a variety ranging from primary and secondary to icon and disabled buttons.</p>
+                    
+                    <div class="container_component wrapper_button">
+                        <a href="#" class="btn btn_sm btn_primary">Primary</a>
+                        <a href="#" class="btn btn_sm btn_secondary">Secondary</a>
+                        <a href="#" class="btn btn_sm btn_outline">Outline</a>
+                        <a href="#" class="btn btn_sm btn_success">Success</a>
+                        <a href="#" class="btn btn_sm btn_danger">Danger</a>
+                        <a href="#" class="btn btn_sm btn_warning">Warning</a>
+                        <a href="#" class="btn btn_sm btn_info">Info</a>
+                    </div>
+
+                    <div class="code_snippet">
+                        <script src="https://gist.github.com/saadahmadhere/8f33f004b9bb088e2055cb4f951c2566.js"></script>
+                    </div>
+
+                    <div class="component_subtitle">
+                        Disabled button
+                    </div>
+
+                    <div class="container_component">
+                        <a href="#" class="btn btn_sm btn_danger btn_disabled">Disabled</a>
+                    </div>
+
+                    <div class="code_snippet">
+                        <script src="https://gist.github.com/saadahmadhere/5c92798b89b6450227d9c588f519eebc.js"></script>
+                    </div>
+
+                    <div class="component_subtitle">
+                        Button Sizes
+                    </div>
+
+                    <div class="component_description">
+                        Buttons come in 2 sizes in chroma. Use <code class="code_text">btn_sm</code> class for small buttons and <code class="code_text">btn_lg</code> class for large buttons.
+                    </div>
+
+                    <div class="container_component wrapper_button">
+                        <a href="#" class="btn btn_lg btn_primary">Large Button</a>
+                        <a href="#" class="btn btn_sm btn_primary">Small Button</a>
+                    </div>
+                    <div class="code_snippet">
+                        <script src="https://gist.github.com/saadahmadhere/244d4791722954cfc5fcc8d0ce73a4a7.js"></script>
+                    </div>
+
+                    <div class="component_subtitle">
+                        Button Link and Button Icon
+                    </div>
+
+                    <div class="container_component">
+                        <a href="#" class="btn_link">Button Link</a>
+                        <a href="#" class="btn_icon">
+                            <span class="material-icons outlined">
+                                shopping_cart
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="code_snippet">
+                        <script src="https://gist.github.com/saadahmadhere/eb7a3a881f861a50bf8f58ffe6754485.js"></script>
+                    </div>
+
+                    <div class="component_subtitle">
+                        Floating action button and Toggle button
+                    </div>
+
+                    <div class="container_component">
+                        <a href="#" class="btn_floating">
+                          <span class="material-icons outlined">
+                              add
+                          </span>
+                        </a>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="code_snippet">
+                        <script src="https://gist.github.com/saadahmadhere/39a34f88a625c182ae291947fe932ecd.js"></script>
+                    </div>
+                </div>
+            </section>
             </div>
         </main>
     </section>
+
 
     <script src="./components/component.js"></script>
 </body>

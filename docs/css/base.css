@@ -1,7 +1,7 @@
 :root{
     --primary-color: #339AF0;
     --link:#777777; 
-    --link-hover: #4DABF7;
+    --link-hover: #4993cf;
     --primary-text-color: #396597;
     --border: #44444417;
     --border-dark: #24222285;
@@ -22,6 +22,19 @@
     --alert-warning-icon: #fcd34c;
     --alert-close-icon: #cec8c8;
     --avatar-text-background: #9bd9ff;
+    --white: white;
+   
+
+    /* Buttons */
+    --secondary-btn: #888a8b;
+    --secondary-btn-hover: #717374;
+    --success-btn: #157347;
+    --danger-btn: #BB2D3B;
+    --warning-btn: #FFC107;
+    --info-btn: #31D2F2;
+    --btn-black-text: #000000cc;
+    --toggle-background: #ccc;
+
     
 }
 
