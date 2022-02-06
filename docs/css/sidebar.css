@@ -2,7 +2,7 @@
     grid-column: 1/2;
     height: 100vh;
     box-shadow: 2px 0 2px 2px var(--box-shadow);
-    padding: 1rem 1rem 1rem 2rem;
+    /* padding: 1rem 1rem 1rem 2rem; */
     overflow-y: scroll;
     position: sticky;
     top:0
@@ -15,16 +15,19 @@
 }
 
 .sidebar_heading{
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 1rem 1.625rem;
 }
 
-.sidebar_component{
-    padding: 8px 1rem;
-}
-
-.sidebar a{
+.sidebar_component a{
+    display: block;
+    padding: 0.6rem 2rem;
     font-size: 1.25rem;
+    transition: .4s;
+}
+
+.sidebar_component a:hover{
+    background-color: var(--alert-primary);
+     color: var(--link-hover)
 }
 
 @media only screen and (max-width: 696px) {
