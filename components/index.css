@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('../docs/css/reset.css');
 @import url('../docs/css/base.css');
+@import url('../docs/css/utilities.css');
 @import url('../docs/css/navbar.css');
 @import url('../docs/css/sidebar.css');
 @import url('../docs/css/doc.css');
