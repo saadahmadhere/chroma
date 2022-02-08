@@ -26,3 +26,7 @@ a{
     font: inherit;
 }
 
+.gist-meta{
+    display: none;
+}
+
