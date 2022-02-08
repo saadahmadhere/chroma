@@ -48,6 +48,7 @@
 .code_text{
     color: var(--primary-text-color);
     font-size: 1rem;
+    letter-spacing: initial;
 }
 
 .container_component{

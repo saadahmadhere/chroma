@@ -35,6 +35,29 @@
     --btn-black-text: #000000cc;
     --toggle-background: #ccc;
 
+    /* Cards */
+    --rating-bg: #cec8c8fa;
+
+    /* numbering */
+    --golden-400: #FF9529;
+
+    /* Gray */
+    --gray-100: #181818;
+    --gray-200: #404040;
+    --gray-300: #696969;
+    --gray-400: #808080;
+    --gray-500: #A0A0A0;
+    --gray-600: #BEBEBE;
+    --gray-700: #D0D0D0;
+    --gray-800: #F5F5F5;
+
+    /* Black */
+    --black-100: #000000cc;
+    /* --link:#777777; 
+    --gray-600: #ffffffcc;
+    --border: #44444417;
+    --box-shadow: #00000009; */
+
     
 }
 
