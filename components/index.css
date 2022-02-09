@@ -82,6 +82,17 @@ body{
     object-fit: cover;
 }
 
+#cta_buttons{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cta_buttons > *{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 
 @media only screen and (max-width:1000px){

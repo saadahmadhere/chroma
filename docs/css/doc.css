@@ -71,6 +71,17 @@
     overflow: scroll;
 }
 
+/*Buttons*/
+
+.wrapper_button{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper_button > *{
+    margin: 10px;
+}
+
 .btn_to__top{
     position: fixed;
     bottom: 1rem;
