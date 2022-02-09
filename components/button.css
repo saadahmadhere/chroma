@@ -40,7 +40,14 @@
     background-color: var(--primary-color);
 }
 
-.btn_primary:hover{
+.btn_primary:hover,
+.btn_secondary:hover,
+.btn_success:hover,
+.btn_danger:hover,
+.btn_warning:hover,
+.btn_info:hover,
+.btn_floating:hover
+{
     opacity: 0.8;
 }
 
@@ -48,9 +55,6 @@
     background-color: var(--secondary-btn);
 }
 
-.btn_secondary:hover{
-    opacity: 0.8;
-}
 
 .btn_outline{
     border: 1px solid var(--primary-color);
@@ -66,35 +70,23 @@
     background-color: var(--success-btn);
 }
 
-.btn_success:hover{
-    opacity: 0.8;
-}
 
 .btn_danger{
     background-color: var(--danger-btn);
 }
 
-.btn_danger:hover{
-    opacity: 0.8;
-}
 
 .btn_warning{
     background-color: var(--warning-btn);
     color: var(--btn-black-text)
 }
 
-.btn_warning:hover{
-    opacity: 0.8;
-}
 
 .btn_info{
     background-color: var(--info-btn);
     color: var(--btn-black-text);
 }
 
-.btn_info:hover{
-    opacity: 0.8;
-}
 
 .btn.btn_disabled{
     opacity: 0.6;
@@ -120,9 +112,6 @@
     border-radius: 50%;
 }
 
-.btn_floating:hover{
-    opacity: 0.8;
-}
 
 .switch{
     position: relative;
