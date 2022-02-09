@@ -108,19 +108,6 @@ body{
         align-items: center;
     }
 
-    .nav{
-        padding: 10px;
-    }
-   .nav_links_about, .nav_logo .logo_text{
-        display: none
-    }
-
-    .nav_logo{
-        font-size: 1.8rem;
-    }
-
-    .nav_item{
-        padding: 10px;
-    }
+    
     
 }
