@@ -21,7 +21,8 @@ body{
     letter-spacing: .025em;
 }
 
-.main_top, .main_bottom{
+.main_top,
+.main_bottom{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -30,7 +31,8 @@ body{
     padding: 1rem;
 }
 
-.main_top h1,.main_bottom h1{
+.main_top h1,
+.main_bottom h1{
     font-family: 'Montserrat', sans-serif;
     color: var(--heading);
     font-weight: 600;
@@ -44,7 +46,8 @@ body{
     font-size: calc(1rem + 2vw);
 }
 
-.main_top p, .main_bottom p{
+.main_top p,
+.main_bottom p{
     margin-top: .5rem;
     padding: .5rem;
 }
@@ -82,6 +85,17 @@ body{
     object-fit: cover;
 }
 
+#cta_buttons{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cta_buttons > *{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 
 @media only screen and (max-width:1000px){
@@ -91,25 +105,15 @@ body{
     }
 }
 
-@media only screen and (max-width: 696px){
+@media only screen and (max-width: 600px){
+
     .main_top{
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .nav{
-        padding: 10px;
-    }
-   .nav_links_about, .nav_logo .logo_text{
-        display: none
-    }
-
-    .nav_logo{
-        font-size: 1.8rem;
-    }
-
-    .nav_item{
-        padding: 10px;
+    #cta_buttons > *{
+        margin: 1rem auto;
     }
     
 }
