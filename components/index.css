@@ -21,7 +21,8 @@ body{
     letter-spacing: .025em;
 }
 
-.main_top, .main_bottom{
+.main_top,
+.main_bottom{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -30,7 +31,8 @@ body{
     padding: 1rem;
 }
 
-.main_top h1,.main_bottom h1{
+.main_top h1,
+.main_bottom h1{
     font-family: 'Montserrat', sans-serif;
     color: var(--heading);
     font-weight: 600;
@@ -44,7 +46,8 @@ body{
     font-size: calc(1rem + 2vw);
 }
 
-.main_top p, .main_bottom p{
+.main_top p,
+.main_bottom p{
     margin-top: .5rem;
     padding: .5rem;
 }
@@ -102,12 +105,15 @@ body{
     }
 }
 
-@media only screen and (max-width: 696px){
+@media only screen and (max-width: 600px){
+
     .main_top{
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    
+    #cta_buttons > *{
+        margin: 1rem auto;
+    }
     
 }

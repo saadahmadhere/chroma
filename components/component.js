@@ -1,3 +1,5 @@
+"use strict"
+
 let alertBtnClose = document.querySelectorAll('.alert_btn_close');
 let cardBtnClose = document.querySelectorAll('.btn_card__close');
 
