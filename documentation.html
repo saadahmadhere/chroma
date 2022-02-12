@@ -678,21 +678,126 @@
                     Simple Form
                 </div>
                 <div class="component_description">
-                    
+                    Use the class <code class="code_text">field_required</code> if you want the field to be mandatory, with <code class="code_text">required</code> attribute in the input tag.
                 </div>
                 <div class="container_component">
-                    <form id="#form">
-
-                        <label>
+                    <form class="form">
+                        <label class="label field_required" for="email_id">
                             Email address
-                            <input
-                             type="email"
-                             placeholder="abc@example.com" 
-                             class="input block"
-                             required>
                         </label>
-                    </div>
-                </form>
+                        <input
+                            id="email_id"
+                            type="email"
+                            placeholder="abc@example.com" 
+                            class="input block"
+                            required
+                        >
+                        <label class="label" for="textarea">
+                            TextArea
+                        </label>
+                        <textarea
+                        id="textarea" 
+                        type="text"
+                        placeholder="Enter the message here..."
+                        class="input block"
+                        rows="4"
+                        >
+                        </textarea>
+                    </form>
+                </div>
+                <div class="code_snippet">
+                    <script src="https://gist.github.com/saadahmadhere/c974af531aded5edd8e2b4852d2209a9.js"></script>
+                </div>
+                <div class="component_subtitle">
+                    Form with validation
+                </div>
+                <div class="component_description">
+                    Use <code class="code_text">form_valid</code> class and id to check the validity of your forms.
+                </div>
+                <div class="container_component">
+                    <form class="form form_valid" id="form_valid" novalidate>
+                        <div class="input_container">
+                            <label for="username" class="label field_required">
+                                Username
+                            </label>
+                            <input
+                            type="text" 
+                            id="username" 
+                            class="input block form_field" 
+                                required
+                                >
+                                <div class="msg_success">
+                                <i class="fas fa-check-circle"></i>
+                                Looks good                                
+                            </div>
+                            <div class="msg_error">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Enter the correct username                   
+                            </div>
+                        </div>
+                        <div class="input_container">
+                            <label for="email" class="label field_required">
+                                Email
+                            </label>
+                            <input 
+                            type="email" 
+                            class="input block" 
+                            id="email"
+                            required
+                            >
+                            <div class="msg_success">
+                                <i class="fas fa-check-circle"></i>
+                                Looks good                                
+                            </div>
+                            <div class="msg_error">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Enter the correct email                   
+                            </div>
+                        </div>
+                        <div class="input_container">
+                            <label for="country" class="label">Select your country:</label>
+                            <select name="country" id="country">
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                        </div>
+                        <div class="input_container">
+                            <input 
+                                type="checkbox" 
+                                id="check_box"
+                                required
+                            >
+                            <label 
+                                for="check_box" 
+                                class="label field_required"
+                            >
+                                I agree to the terms of service.
+                            </label>
+                            <div class="msg_success">
+                                <i class="fas fa-check-circle"></i>
+                                Looks good                                
+                            </div>
+                            <div class="msg_error">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Please accept the terms of services.                  
+                            </div>
+                        </div>
+                            <button class="btn btn_sm btn_primary" type="submit" form="form_valid">
+                                Submit
+                            </button>
+                    </form>
+                </div>
+                <div class="code_snippet">
+                    <script src="https://gist.github.com/saadahmadhere/68f5f4c779be43eaf7775ba41a219709.js"></script>
+                </div>
+                <div class="component_subtitle">
+                    Javascript
+                </div>
+                <div class="code_snippet">
+                    <script src="https://gist.github.com/saadahmadhere/c31ff8f780f2f17e9335fefeeef5e700.js"></script>
+                </div>
             </section>
 
         </main>
