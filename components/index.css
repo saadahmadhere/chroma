@@ -13,6 +13,7 @@
 @import url('./button.css');
 @import url('./card.css');
 @import url('./responsive-img.css');
+@import url('./form.css');
 
 html{
     font-size: 100%;

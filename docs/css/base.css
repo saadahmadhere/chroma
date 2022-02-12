@@ -53,10 +53,14 @@
 
     /* Black */
     --black-100: #000000cc;
-    /* --link:#777777; 
-    --gray-600: #ffffffcc;
-    --border: #44444417;
-    --box-shadow: #00000009; */
+
+    /* Colors */
+    --red-400: #f02a2a;
+
+    /* Form validation */
+    --form-success: #2ecc71;
+    --form-error: #e74c3c;
+    
 
     
 }
