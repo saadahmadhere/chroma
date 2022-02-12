@@ -9,6 +9,8 @@ alertBtnClose.forEach(alertCloseButton => {
     })
 });
 
+
+
 // Cards
 let cardBtnClose = document.querySelectorAll(".btn_card__close");
 
@@ -18,8 +20,9 @@ cardBtnClose.forEach(cardClose =>{
     })
 });
 
-//Form validation
 
+
+//Form validation
 const formValidate = document.querySelectorAll(".form_valid");
 
 formValidate.forEach(form =>{
