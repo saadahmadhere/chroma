@@ -89,7 +89,15 @@
     border: 1px solid var(--white);
 }
 
+/* Typography */
 
+.typography .container_component{
+    align-items: flex-start;
+}
+
+.typography .container_component.text_alignment{
+    display: block;
+}
 @media only screen and (max-width: 1024px) {
 
     .doc_main__content{

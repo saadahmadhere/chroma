@@ -6,6 +6,22 @@
     display: flex;
 }
 
+.flex_col{
+    flex-direction: column;
+}
+
+.flex_col__rev{
+    flex-direction: column-reverse;
+}
+
+.flex_row{
+    flex-direction: row;
+}
+
+.flex_row__rev{
+    flex-direction: row-reverse;
+}
+
 .inline{
     display: inline;
 }

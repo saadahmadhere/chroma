@@ -1,0 +1,123 @@
+/* Heading */
+
+.h1 {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 1.75rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+}
+
+.h5 {
+  font-size: 1rem;
+}
+
+.h6 {
+  font-size: 0.875rem;
+}
+
+/* Text sizes */
+
+.txt_rg {
+    font-size: 1rem;
+}
+
+.txt_lg {
+    font-size: 1.875rem;
+}
+
+.txt_md {
+    font-size: 1.5rem;
+}
+
+.txt_sm {
+    font-size: 0.875rem;
+}
+
+/* Font Weights */
+.txt_light {
+    font-weight: 300;
+}
+
+.txt_regular {
+    font-weight: 400;
+}
+
+.txt_semibold {
+    font-weight: 600;
+}
+
+.txt_bold {
+    font-weight: 700;
+}
+
+.txt_boldest {
+    font-weight: 900;
+}
+
+/* Gray text */
+
+.gray_primary{
+    color: var(--gray-200);
+}
+
+.gray_secondary{
+    color: var(--gray-400)
+}
+
+/* Text alignment */
+
+.txt_right{
+    text-align: right;
+}
+
+.txt_center{
+    text-align: center;
+}
+
+/* Text style */
+
+.txt_strike__through{
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 600px) {
+
+.h1 {
+    font-size: 3rem;
+}
+
+
+.h2 {
+    font-size: 2rem;
+}
+
+
+.h3 {
+    font-size: 1.75rem;
+}
+
+
+.h4 {
+    font-size: 1.5rem;
+}
+
+
+.h5 {
+    font-size: 1.25rem;
+}
+
+
+.h6 {
+    font-size: 1rem;
+}
+}
+  

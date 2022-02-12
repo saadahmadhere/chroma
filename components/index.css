@@ -14,6 +14,7 @@
 @import url('./card.css');
 @import url('./responsive-img.css');
 @import url('./form.css');
+@import url('./typography.css');
 
 html{
     font-size: 100%;
