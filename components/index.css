@@ -15,6 +15,7 @@
 @import url('./responsive-img.css');
 @import url('./form.css');
 @import url('./typography.css');
+@import url('./snackbar.css');
 
 html{
     font-size: 100%;
