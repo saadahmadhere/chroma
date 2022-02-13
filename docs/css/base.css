@@ -62,7 +62,9 @@
     --form-success: #2ecc71;
     --form-error: #e74c3c;
     
-
+    /* navigation */
+    --navbar-bg: #2874F0;
+    --navbar-btn-primary: #FFE500;
     
 }
 
