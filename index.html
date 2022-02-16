@@ -1,116 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chroma UI</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
     <!-- StyleSheet -->
-    <link rel="stylesheet" href="./components/index.css">
+    <link rel="stylesheet" href="./components/css/index.css" />
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/b9c207240a.js" crossorigin="anonymous"></script>
-
-
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/b9c207240a.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
     <nav class="nav">
-        <a href="./index.html" class="nav_logo">
-            <i class="fab fa-contao fa-lg"></i>            
-        </a>
-        <div class="nav_links">
-            <div class="nav_close ">
-                <i class="fas fa-times fa-2x"></i>
-            </div>
-            <ul class='nav_links_about flex'>
-                <li class=nav_item>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./documentation.html">Documentation</a>
-                </li>
-            </ul>
+      <a href="./index.html" class="nav_logo">
+        <i class="fab fa-contao fa-lg"></i>
+      </a>
+      <div class="nav_links">
+        <div class="nav_close">
+          <i class="fas fa-times fa-2x"></i>
+        </div>
+        <ul class="nav_links_about flex">
+          <li class="nav_item">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="./documentation.html">Documentation</a>
+          </li>
+        </ul>
 
-            <ul class="nav_links_social flex">
-                <li class="nav_item">
-                    <a href="https://github.com/saadahmadhere" target= "_blank">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="https://www.linkedin.com/in/saadahmadhere/" target= "_blank">
-                        <i class="fab fa-linkedin-in fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="https://twitter.com/imsaadahmad" target= "_blank">
-                        <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">
-                        <i class="fas fa-moon fa-lg"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-           
-        <div class="burger">
-            <i class="fas fa-bars fa-lg"></i>
-        </div>
+        <ul class="nav_links_social flex">
+          <li class="nav_item">
+            <a href="https://github.com/saadahmadhere" target="_blank">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a
+              href="https://www.linkedin.com/in/saadahmadhere/"
+              target="_blank">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="https://twitter.com/imsaadahmad" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="burger">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
     </nav>
 
     <main class="container_main">
-        <div class="main_top">
-            <div class="main_top__left">
-                <h1>Build your site at lightening fast speed with <span class='library_name'>Chroma</span></h1>
-                <p>Don't let design take your mental space. Use Chroma to design wesites on the go.</p>
-                <div id="cta_buttons">
-                    <a class="btn btn_lg btn_outline" href="#installation">Installation</a>
-                    <a class="btn btn_lg btn_primary" href="./documentation.html">Documentation</a>
-                </div>
-            </div>
-            <div class="main_top__right">
-                <img src="./assets/chroma landing.svg" alt="image" class="image_main">
-            </div>
+      <div class="main_top flex_align__center">
+        <div class="main_top__left">
+          <h1>
+            Build your site at lightening fast speed with
+            <span class="library_name">Chroma</span>
+          </h1>
+          <p>
+            Don't let design take your mental space. Use Chroma to design
+            wesites on the go.
+          </p>
+          <div id="cta_buttons">
+            <a class="btn btn_lg btn_outline" href="#installation">
+              Installation
+            </a>
+            <a class="btn btn_lg btn_primary" href="./documentation.html">
+              Documentation
+            </a>
+          </div>
         </div>
-
-        <div class="main_bottom" id="installation">
-            <div class="main_bottom__left">
-                <h1>Installation</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione iure nobis, magnam consequatur ipsum quibusdam reiciendis nemo inventore nisi </p>
-            </div>
-
-            <div class="main_bottom__right">
-
-            </div>
+        <div class="main_top__right">
+          <img
+            src="./assets/chroma landing.svg"
+            alt="image"
+            class="image_main" />
         </div>
+      </div>
+
+      <div class="main_bottom" id="installation">
+        <div class="main_bottom__up flex_align__center flex_col">
+          <h1>Installation</h1>
+          <p>
+            Paste the stylesheet link in your header tag before any stylesheet
+            to use the styles provided by of chroma.
+          </p>
+        </div>
+        <div class="main_bottom__down flex_justify__center">
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/67d1ff97df32f36a25de16262d5bad26.js"></script>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer id="footer">
-        <h3 class="footer_heading">
-            Made with {&#9829;} by
-            <a href="https://saadahmad.netlify.app/">
-                 Saad Ahmad
-            </a>
-        </h3>
-        <div class="footer_social">
-            <a href="https://twitter.com/imsaadahmad" target= "_blank">
-                <i class="fab fa-twitter fa-lg"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/saadahmadhere/" target= "_blank">
-                <i class="fab fa-linkedin-in fa-lg"></i>
-            </a>
-            <a href="https://github.com/saadahmadhere" target= "_blank">
-                <i class="fab fa-github fa-lg"></i>
-            </a>
-        </div>
+      <h3 class="footer_heading">
+        Made with {&#9829;} by
+        <a href="https://saadahmad.netlify.app/">Saad Ahmad</a>
+      </h3>
+      <div class="footer_social">
+        <a href="https://twitter.com/imsaadahmad" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/saadahmadhere/" target="_blank">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+        <a href="https://github.com/saadahmadhere" target="_blank">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+      <h5>v 1.0.0</h5>
     </footer>
 
     <script src="./docs/doc.js"></script>
-</body>
+  </body>
 </html>
