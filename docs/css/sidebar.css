@@ -1,77 +1,76 @@
-.sidebar{
-    grid-column: 1/2;
-    max-height: 100vh;
-    box-shadow: 2px 0 2px 2px var(--box-shadow);
-    overflow-y: scroll;
-    position: sticky;
-    top:0;
-    background-color: var(--white);
+.sidebar {
+  grid-column: 1/2;
+  max-height: 100vh;
+  box-shadow: var(--size-1) 0 var(--size-1) var(--size-1) var(--box-shadow);
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
 }
 
-.sidebar .sidebar_header{
-    font-size: 1.5rem;
-    color: var(--heading);
-    font-weight: 400;
+.sidebar .sidebar_header {
+  font-size: 1.5rem;
+  color: var(--heading);
+  font-weight: 400;
 }
 
-.sidebar_header{
-    padding: 1rem 1.625rem;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
+.sidebar_header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar_component a{
-    display: block;
-    padding: 0.6rem 2rem;
-    font-size: 1.25rem;
-    transition: .4s;
+.sidebar_component a {
+  display: block;
+  padding: 8px 2rem;
+  font-size: 1.25rem;
+  transition: 0.4s;
 }
 
-.sidebar_component a:hover{
-    background-color: var(--alert-primary);
-     color: var(--link-hover)
+.sidebar_component a:hover {
+  background-color: var(--alert-primary);
+  color: var(--link-hover);
 }
 
-.sidebar_arrow{
-    transition: .2s ease-out;
-    display: none;
+.sidebar_arrow {
+  transition: 0.2s ease-out;
+  display: none;
 }
 
-.arrow_rotate{
-    transition: .2s ease-in;
+.arrow_rotate {
+  transition: 0.2s ease-in;
 }
 
 @media only screen and (max-width: 1024px) {
-    .sidebar{
-        grid-row: 1/2;
-        grid-column: 1/-1;
-        text-align: start;
-        z-index: 1;
-        height: initial;     
-    }
+  .sidebar {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    text-align: start;
+    z-index: 1;
+    height: initial;
+  }
 
-    .sidebar_header{
-        display: flex;
-        justify-content: space-between;
-    }
+  .sidebar_header {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .sidebar_body{
-        height: 0;
-        overflow: hidden;
-        transition: .3s all;
-    }
+  .sidebar_body {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+  }
 
-    .sidebar_arrow{
-        display: block;
-    }
+  .sidebar_arrow {
+    display: block;
+  }
 
-    .sidebar_active{
-        overflow: scroll;
-        height: 100%;
-    }
+  .sidebar_active {
+    overflow: scroll;
+    height: 100%;
+  }
 
-    .arrow_rotate{
-        transform: rotate(180deg);       
-    }
+  .arrow_rotate {
+    transform: rotate(180deg);
+  }
 }
