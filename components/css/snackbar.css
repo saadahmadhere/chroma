@@ -1,0 +1,39 @@
+.snackbar_notification,
+.snackbar_notification .snackbar_buttons{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.snackbar_notification.snackbar_stacked{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.snackbar_notification.snackbar_stacked .snackbar_buttons{
+    margin-left: auto;
+}
+
+.snackbar_notification .snackbar_buttons{
+    width: 8%;
+    margin: auto 10px;
+}
+
+.snackbar_notification{
+    padding: 10px 1rem;
+    background-color: var(--alert-primary);
+    width: 100%;
+    border-radius: 8px;
+}
+
+.snackbar_buttons .material-icons.close,
+.snackbar_buttons .span_button{
+    color: var(--purple);
+}
+
+@media only screen and (max-width: 600px){
+  
+    .snackbar_notification .snackbar_buttons{
+        width: 20%;
+    }
+
+}
