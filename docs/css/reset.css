@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Lato', sans-serif;   
-    color: var(--content);
+    color: var(--gray-400);
 }
 
 ul{
@@ -30,3 +30,8 @@ a{
     display: none;
 }
 
+.code_snippet .gist .gist-file,
+.code_snippet .gist .gist-data{
+    margin: 0;
+    border: none;
+}

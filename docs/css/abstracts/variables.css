@@ -1,0 +1,33 @@
+:root{
+
+    /* Sizes */
+    --size-1: 4px;
+    --size-2: 8px;
+    --size-3: 0.75rem;
+    --size-4: 1rem;
+    --size-5: 1.25rem;
+    --size-6: 1.5rem;
+    --size-7: 1.75rem;
+    --size-8: 2rem;
+    --size-9: 2.25rem;
+    --size-10: 2.5rem;
+    --size-11: 2.75rem;
+    --size-12: 3rem;
+    --size-13: 3.25rem;
+    --size-14: 3.5rem;
+    --size-15: 3.75rem;
+    --size-16: 4rem;
+    --size-17: 4.25rem;
+    --size-18: 4.5rem;
+    --size-19: 4.75rem;
+    --size-20: 5rem;
+
+    /* Screen Size Breakpoints */
+    --screen-size-xsm: 30rem; /* 480px */
+    --screen-size-sm: 40rem; /* 640px */
+    --screen-size-md: 48rem; /* 768px */
+    --screen-size-lg: 64rem; /* 1024px */
+    --screen-size-xl: 80rem; /* 1280px */
+    --screen-size-xxl: 96rem; /* 1536px */
+
+}

@@ -1,999 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chroma | Docs</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./components/index.css">
+    <link rel="stylesheet" href="./components/css/index.css" />
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/b9c207240a.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/b9c207240a.js"
+      crossorigin="anonymous"></script>
+  </head>
 
-<body>
-
+  <body>
     <nav class="nav">
-        <a href="./index.html" class="nav_logo">
-            <i class="fab fa-contao fa-lg"></i>            
-        </a>
-        <div class="nav_links">
-            <div class="nav_close ">
-                <i class="fas fa-times fa-2x"></i>
-            </div>
-            <ul class='nav_links_about flex'>
-                <li class=nav_item>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./documentation.html">Documentation</a>
-                </li>
-            </ul>
-
-            <ul class="nav_links_social flex">
-                <li class="nav_item">
-                    <a href="https://github.com/saadahmadhere" target= "_blank">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="https://www.linkedin.com/in/saadahmadhere/" target= "_blank">
-                        <i class="fab fa-linkedin-in fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="https://twitter.com/imsaadahmad" target= "_blank">
-                        <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">
-                        <i class="fas fa-moon fa-lg"></i>
-                    </a>
-                </li>
-            </ul>
+      <a href="./index.html" class="nav_logo">
+        <i class="fab fa-contao fa-lg"></i>
+      </a>
+      <div class="nav_links">
+        <div class="nav_close">
+          <i class="fas fa-times fa-2x"></i>
         </div>
-           
-        <div class="burger">
-            <i class="fas fa-bars fa-lg"></i>
-        </div>
+        <ul class="nav_links_about flex">
+          <li class="nav_item">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="./documentation.html">Documentation</a>
+          </li>
+        </ul>
+        <ul class="nav_links_social flex">
+          <li class="nav_item">
+            <a href="https://github.com/saadahmadhere" target="_blank">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a
+              href="https://www.linkedin.com/in/saadahmadhere/"
+              target="_blank">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="https://twitter.com/imsaadahmad" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
     </nav>
-    
+
     <section class="doc_main">
-        <aside class="sidebar">
-            <div class="sidebar_header">
-                <h1 class="title">Components</h1>
-                <div class="sidebar_arrow">
-                    <span class="material-icons outlined ">
-                        expand_more
+      <aside class="sidebar">
+        <div class="sidebar_header">
+          <h1 class="title">Components</h1>
+          <div class="sidebar_arrow">
+            <span class="material-icons outlined">expand_more</span>
+          </div>
+        </div>
+        <div class="sidebar_body">
+          <ul>
+            <li class="sidebar_component"><a href="#avatar">Avatars</a></li>
+            <li class="sidebar_component"><a href="#alert">Alerts</a></li>
+            <li class="sidebar_component"><a href="#badge">Badges</a></li>
+            <li class="sidebar_component"><a href="#button">Buttons</a></li>
+            <li class="sidebar_component"><a href="#card">Cards</a></li>
+            <li class="sidebar_component"><a href="#image">Images</a></li>
+            <li class="sidebar_component"><a href="#form">Forms</a></li>
+            <li class="sidebar_component">
+              <a href="#typography">Typography</a>
+            </li>
+            <li class="sidebar_component"><a href="#snackbar">Snackbar</a></li>
+            <li class="sidebar_component">
+              <a href="#navigation">Navigation</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="doc_main__content">
+        <section id="avatar" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Avatars</h1>
+            <p class="component_brief">
+              Avatars are used for display pictures, images in cards, email
+              signatures, etc.
+            </p>
+            <p class="component_description">
+              You can use avatar of 4 different sizes. Use class
+              <code class="code_text">avatar</code>
+              and
+              <code class="code_text">avatar_circle</code>
+              with the
+              <code class="code_text">&lt;img&gt;</code>
+              or circular avatars. For size, use
+              <code class="code_text">avatar_xs</code>
+              ,
+              <code class="code_text">avatar_sm</code>
+              ,
+              <code class="code_text">avatar_md</code>
+              and
+              <code class="code_text">avatar_lg</code>
+              .
+            </p>
+          </div>
+          <div class="container_component">
+            <img
+              class="avatar avatar_circle avatar_lg"
+              src="./assets/girl-face.jpg"
+              alt="girl" />
+            <img
+              class="avatar avatar_circle avatar_md"
+              src="./assets/girl-face.jpg"
+              alt="girl" />
+            <img
+              class="avatar avatar_circle avatar_sm"
+              src="./assets/girl-face.jpg"
+              alt="girl" />
+            <img
+              class="avatar avatar_circle avatar_xs"
+              src="./assets/girl-face.jpg"
+              alt="girl" />
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/e036bc0ababae58c6cd87034da57279e.js"></script>
+          </div>
+
+          <p class="component_description">
+            You can use avatars for texts too. Use classes
+            <code class="code_text">avatar_text</code>
+            in addition to the previous classes. Use
+            <code class="code_text">&lt;div&gt;</code>
+            here.
+          </p>
+
+          <div class="container_component">
+            <div class="avatar avatar_text avatar_circle avatar_lg gray_title">
+              Text
+            </div>
+            <div class="avatar avatar_text avatar_circle avatar_md gray_title">
+              Text
+            </div>
+            <div class="avatar avatar_text avatar_circle avatar_sm gray_title">
+              Text
+            </div>
+            <div class="avatar avatar_text avatar_circle avatar_xs gray_title">
+              Text
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/4a861b8ee53824b52fba8a7a5fff5514.js"></script>
+          </div>
+        </section>
+
+        <section id="alert" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Alerts</h1>
+            <p class="component_brief">
+              Alerts are used to when we need to get user's attention
+              immediately.
+            </p>
+            <p class="component_description">
+              You can use several types of alerts you can use. Use class
+              <code class="code_text">alert_primary</code>
+              ,
+              <code class="code_text">alert_secondary</code>
+              , and
+              <code class="code_text">alert_success</code>
+              etc., as given in the code snippets below to use the colors of
+              respective kind.
+            </p>
+          </div>
+          <div class="wrapper_alert container_component">
+            <div class="alert alert_primary gray_title" role="alert">
+              A simple primary alert!
+            </div>
+            <div class="alert alert_secondary gray_title" role="alert">
+              A simple secondary alert!
+            </div>
+            <div class="alert alert_success gray_title" role="alert">
+              <span class="material-icons">check_circle</span>
+              A simple success alert!
+            </div>
+            <div class="alert alert_danger gray_title" role="alert">
+              <span class="material-icons round">warning</span>
+              A simple danger alert!
+            </div>
+            <div class="alert alert_warning gray_title" role="alert">
+              <span class="material-icons">error</span>
+              A simple warning alert!
+            </div>
+          </div>
+
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/1bf8e37188a79e40ae0fb5fbc0cf5ef6.js"></script>
+          </div>
+
+          <p class="component_description">
+            You can use alerts with a closing button too.
+          </p>
+          <div class="wrapper_alert container_component">
+            <div class="alert alert_danger alert_close gray_title" role="alert">
+              <span class="material-icons">warning</span>
+
+              An alert with a close button.
+
+              <button class="alert_btn_close">
+                <span class="material-icons round close">close</span>
+              </button>
+            </div>
+            <div
+              class="alert alert_success alert_close gray_title"
+              role="alert">
+              A simple alert with a close button.
+
+              <button class="alert_btn_close gray_title">
+                <span class="material-icons round close">close</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/102e54f999f3cec4862421e5a0f2f571.js"></script>
+          </div>
+
+          <p class="component_subtitle">Javascript</p>
+
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/b6153a993c9499828f4268a4b3e78832.js"></script>
+          </div>
+        </section>
+
+        <section id="badge" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Badges</h1>
+            <p class="component_brief">
+              Badges are used to show the active/inactive, online/offline status
+              of users by using dots of some specific colors on their images.
+            </p>
+            <p class="component_description">
+              You can these with the avatars. Use class
+              <code class="code_text">badge_green</code>
+              and
+              <code class="code_text">badge_red</code>
+              to change the color of dots.
+            </p>
+            <p class="component_subtitle">Badges on Avatars</p>
+          </div>
+
+          <div class="container_component">
+            <div class="avatar_circle__badge lg">
+              <img
+                class="avatar avatar_circle avatar_lg"
+                src="./assets/girl-face.jpg"
+                alt="girl" />
+              <div class="badge badge_green"></div>
+            </div>
+
+            <div class="avatar_circle__badge md">
+              <img
+                class="avatar avatar_circle avatar_md"
+                src="./assets/girl-face.jpg"
+                alt="girl" />
+              <div class="badge badge_red"></div>
+            </div>
+
+            <div class="avatar_circle__badge sm">
+              <img
+                class="avatar avatar_circle avatar_sm"
+                src="./assets/girl-face.jpg"
+                alt="girl" />
+              <div class="badge badge_green"></div>
+            </div>
+
+            <div class="avatar_circle__badge xs">
+              <img
+                class="avatar avatar_circle avatar_xs"
+                src="./assets/girl-face.jpg"
+                alt="girl" />
+              <div class="badge badge_red"></div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/5135f39dff2a73c67277ba5a44074ab7.js"></script>
+          </div>
+          <p class="component_subtitle">Badges on icons</p>
+          <p class="component_description">
+            Icons on the badges come with 2 sizes viz. small and medium. You
+            don't need to do something for small icons, but to use medium ones,
+            you need to use
+            <code class="code_text">md</code>
+            class as shown in the code.
+          </p>
+          <div class="container_component">
+            <div class="icon_badge">
+              <span class="material-icons outlined">shopping_cart</span>
+              <div class="badge badge_red">8</div>
+            </div>
+            <div class="icon_badge">
+              <span class="material-icons outlined">notifications</span>
+              <div class="badge badge_red">8</div>
+            </div>
+            <div class="icon_badge">
+              <span class="material-icons outlined md">shopping_cart</span>
+              <div class="badge badge_red md">8</div>
+            </div>
+            <div class="icon_badge">
+              <span class="material-icons outlined md">notifications</span>
+              <div class="badge badge_red md">8</div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/efb9112e6ec6cfaffdbcac5b2b45c44d.js"></script>
+          </div>
+        </section>
+
+        <section id="button" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Buttons</h1>
+            <p class="component_brief">
+              Use Chroma's buttons for cards, call to actions, forms, dialogs,
+              navigation, etc.
+            </p>
+            <p class="component_description">
+              Buttons come in a variety ranging from primary and secondary to
+              icon and disabled buttons. You can use both
+              <code class="code_text">&#60;button&#62;</code>
+              and
+              <code class="code_text">&#60;a&#62;</code>
+              .
+            </p>
+          </div>
+          <div class="container_component wrapper_button">
+            <button class="btn btn_sm btn_primary">Primary</button>
+            <button class="btn btn_sm btn_secondary">Secondary</button>
+            <button class="btn btn_sm btn_outline">Outline</button>
+            <a class="btn btn_sm btn_success">Success</a>
+            <a class="btn btn_sm btn_danger">Danger</a>
+            <a class="btn btn_sm btn_warning">Warning</a>
+            <a class="btn btn_sm btn_info">Info</a>
+          </div>
+
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/8f33f004b9bb088e2055cb4f951c2566.js"></script>
+          </div>
+
+          <div class="component_subtitle">Disabled button</div>
+
+          <div class="container_component">
+            <a class="btn btn_sm btn_danger btn_disabled">Disabled</a>
+          </div>
+
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/ab9fbcc89299c8668fc77ce931ebba55.js"></script>
+          </div>
+
+          <div class="component_subtitle">Button Sizes</div>
+
+          <div class="component_description">
+            Buttons come in 2 sizes in chroma. Use
+            <code class="code_text">btn_sm</code>
+            class for small buttons and
+            <code class="code_text">btn_lg</code>
+            class for large buttons.
+          </div>
+
+          <div class="container_component wrapper_button">
+            <a class="btn btn_lg btn_primary">Large Button</a>
+            <a class="btn btn_sm btn_primary">Small Button</a>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/5c92798b89b6450227d9c588f519eebc.js"></script>
+          </div>
+
+          <div class="component_subtitle">Button Link and Button Icon</div>
+
+          <div class="container_component">
+            <a class="btn_link">Button Link</a>
+            <a class="btn_icon">
+              <span class="material-icons outlined">shopping_cart</span>
+            </a>
+          </div>
+
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/eb7a3a881f861a50bf8f58ffe6754485.js"></script>
+          </div>
+
+          <div class="component_subtitle">
+            Floating action button and Toggle button
+          </div>
+
+          <div class="container_component">
+            <a class="btn_floating">
+              <span class="material-icons outlined">add</span>
+            </a>
+
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/eb7a3a881f861a50bf8f58ffe6754485.js"></script>
+          </div>
+        </section>
+
+        <section id="card" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Cards</h1>
+            <p class="component_brief">
+              Cards in chroma come in different sizes and orientation.
+            </p>
+          </div>
+
+          <div class="component_subtitle">Card with badge</div>
+          <div class="component_description">
+            Badges are put on cards to show discount, stock status, etc.
+          </div>
+
+          <div class="container_component">
+            <div class="card card_w_badge">
+              <div class="container_top">
+                <div class="img_card">
+                  <img src="./assets/ape-300px.jpg" alt="A bored ape" />
+                  <span class="card_rating">
+                    4.5
+                    <span class="material-icons round rate_star">
+                      star_rate
                     </span>
+                  </span>
+                  <div class="card_badge">Sold out</div>
                 </div>
+                <div class="heading_card">
+                  <h2 class="h2 gray_title">Bored Ape</h2>
+                  <h4 class="h4">by Vee</h4>
+                </div>
+                <div class="description">
+                  <p class="h3 txt_semibold">Rs.5000</p>
+                  <p class="h5 txt_strikethrough">Rs.6000</p>
+                </div>
+              </div>
+              <div class="container_bottom">
+                <div class="action_buttons">
+                  <a class="btn btn_primary btn_sm">
+                    <span class="material-icons round">flash_on</span>
+                    Buy now
+                  </a>
+                </div>
+                <div class="action_icons">
+                  <button>
+                    <span class="material-icons outlined icon">
+                      add_shopping_cart
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons outlined icon">
+                      favorite_border
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons two-tone icon">share</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="sidebar_body">
-                <ul>
-                    <li class="sidebar_component"><a href="#avatar">Avatars</a></li>
-                    <li class="sidebar_component"><a href="#alert">Alerts</a></li>
-                    <li class="sidebar_component"><a href="#badge">Badges</a></li>
-                    <li class="sidebar_component"><a href="#button">Buttons</a></li>
-                    <li class="sidebar_component"><a href="#card">Cards</a></li>
-                    <li class="sidebar_component"><a href="#image">Images</a></li>
-                    <li class="sidebar_component"><a href="#form">Forms</a></li>
-                    <li class="sidebar_component"><a href="#typography">Typography</a></li>
-                    <li class="sidebar_component"><a href="#snackbar">Snackbar</a></li>
-                    <li class="sidebar_component"><a href="#navigation">Navigation</a></li>
-                    <li class="sidebar_component"><a href="#">Avatar</a></li>
-                    <li class="sidebar_component"><a href="#">Avatar</a></li>
-                    <li class="sidebar_component"><a href="#">Avatar</a></li>
-                    
-                </ul>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/0c98b78879c875865e663ec0193c0549.js"></script>
+          </div>
+
+          <div class="component_subtitle">Card with dismiss</div>
+          <div class="component_description">
+            Chroma provides you with dismissible cards so the users don't waste
+            their time on the items they don't like.
+          </div>
+
+          <div class="container_component">
+            <div class="card card_dismiss">
+              <div class="btn_card__close">
+                <span class="material-icons round card_close">
+                  highlight_off
+                </span>
+              </div>
+              <div class="container_top">
+                <div class="img_card">
+                  <img src="./assets/ape-300px.jpg" alt="A bored ape" />
+                  <span class="card_rating">
+                    4.5
+                    <span class="material-icons round rate_star">
+                      star_rate
+                    </span>
+                  </span>
+                </div>
+                <div class="heading_card">
+                  <h2 class="h2 gray_title">Bored Ape</h2>
+                  <h4 class="h4">by Vee</h4>
+                </div>
+                <div class="description">
+                  <p class="h3 txt_semibold">Rs.5000</p>
+                  <p class="h5 txt_strikethrough">Rs.6000</p>
+                </div>
+              </div>
+
+              <div class="container_bottom">
+                <div class="action_buttons">
+                  <a class="btn btn_primary btn_sm">
+                    <span class="material-icons round">flash_on</span>
+                    Buy now
+                  </a>
+                </div>
+
+                <div class="action_icons">
+                  <button>
+                    <span class="material-icons outlined icon">
+                      add_shopping_cart
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons outlined icon">
+                      favorite_border
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons two-tone icon">share</span>
+                  </button>
+                </div>
+              </div>
             </div>
-           
-        </aside>
-        <main class="doc_main__content">
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/6feb0a3134a94d05851e36a0c15deb3f.js"></script>
+          </div>
+          <div class="component_subtitle">Javascript</div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/b3f82fe83aef684021202bc845c5a7b8.js"></script>
+          </div>
 
-            <section id="avatar" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Avatars</h1>
-                    <p class="component_brief">Avatars are used for display pictures, images in cards, email signatures, etc.</p>
-                    <p class="component_description">You can use avatar of 4 different sizes. Use class <code class="code_text">avatar</code> and <code class="code_text">avatar_circle</code> with the<code class="code_text">&lt;img&gt;</code> or circular avatars. For size, use <code class='code_text'>avatar_xs</code>, <code class='code_text'>avatar_sm</code>, <code class='code_text'>avatar_md</code> and <code class='code_text'>avatar_lg</code>.</p>
+          <div class="component_subtitle">Card with text overlay</div>
+          <div class="component_description">
+            Overlays are used on cards to showcase things like unavalability of
+            items. You need to add the class
+            <code class="code_text">card_overlay</code>
+            on the card and a container with a class
+            <code class="code_text">overlay_div</code>
+            inside the card.
+          </div>
+          <div class="container_component">
+            <div class="card card_w_badge card_overlay">
+              <div class="overlay_div">
+                <div class="overlay_text">
+                  <h2 class="h2">Out Of Stock</h2>
                 </div>
-
-                <div class="container_component">
-                    <img class="avatar avatar_circle avatar_lg" src="./assets/girl-face.jpg" alt="girl">
-                    <img class="avatar avatar_circle avatar_md" src="./assets/girl-face.jpg" alt="girl">
-                    <img class="avatar avatar_circle avatar_sm" src="./assets/girl-face.jpg" alt="girl">
-                    <img class="avatar avatar_circle avatar_xs" src="./assets/girl-face.jpg" alt="girl">
+              </div>
+              <div class="container_top">
+                <div class="img_card">
+                  <img src="./assets/ape-300px.jpg" alt="A bored ape" />
+                  <span class="card_rating">
+                    4.5
+                    <span class="material-icons round rate_star">
+                      star_rate
+                    </span>
+                  </span>
+                  <div class="card_badge">Sold out</div>
                 </div>
-
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/e036bc0ababae58c6cd87034da57279e.js"></script>
+                <div class="heading_card">
+                  <h2 class="h2 gray_title">Bored Ape</h2>
+                  <h4 class="h4">by Vee</h4>
                 </div>
-
-                <p class="component_description">You can use avatars for texts too. Use classes <code      class='code_text'>avatar_text</code> in addition to the previous classes. Use <code class='code_text'>&lt;div&gt;</code> here.</p>
-                
-                <div class="container_component">
-                    <div class="avatar avatar_text avatar_circle avatar_lg">Text</div>
-                    <div class="avatar avatar_text avatar_circle avatar_md">Text</div>
-                    <div class="avatar avatar_text avatar_circle avatar_sm">Text</div>
-                    <div class="avatar avatar_text avatar_circle avatar_xs">Text</div>
+                <div class="description">
+                  <p class="h3 txt_semibold">Rs.5000</p>
+                  <p class="h5 txt_strikethrough">Rs.6000</p>
                 </div>
-
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/4a861b8ee53824b52fba8a7a5fff5514.js"></script>
+              </div>
+              <div class="container_bottom">
+                <div class="action_buttons">
+                  <a class="btn btn_primary btn_sm">
+                    <span class="material-icons round">flash_on</span>
+                    Buy now
+                  </a>
                 </div>
-                
-            </section>
-                
-            <section id="alert" class="section"> 
-                <div class="section_brief">
-                    <h1 class="component_title">Alerts</h1>
-                    <p class="component_brief">Alerts are used to when we need to get user's attention immediately.</p>
-                    <p class="component_description">You can use several types of alerts you can use. Use class <code class="code_text">alert_primary</code>, <code class="code_text">alert_secondary</code>, and <code class="code_text">alert_success</code> etc., as given in the code snippets below to use the colors of respective kind.</p>
+                <div class="action_icons">
+                  <button>
+                    <span class="material-icons outlined icon">
+                      add_shopping_cart
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons outlined icon">
+                      favorite_border
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons two-tone icon">share</span>
+                  </button>
                 </div>
-                <div class="wrapper_alert container_component">
-                    <div class="alert alert_primary">
-                        A simple primary alert!
-                    </div>
-                    <div class="alert alert_secondary" role="alert">
-                        A simple secondary alert!
-                    </div>
-                    <div class="alert alert_success" role="alert">
-                        <span class="material-icons">
-                            check_circle
-                        </span>
-                        A simple success alert!
-                    </div>
-                    <div class="alert alert_danger" role="alert">
-                        <span class="material-icons round">
-                            warning
-                        </span>
-                        A simple danger alert!
-                    </div>
-                    <div class="alert alert_warning" role="alert">
-                        <span class="material-icons">
-                            error
-                        </span>
-                        A simple warning alert!
-                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/a2ee9088f176d53571ec26db19ee2969.js"></script>
+          </div>
+
+          <div class="component_subtitle">Card with text only</div>
+          <div class="container_component">
+            <div class="card card_text">
+              <div class="container_top">
+                <div class="heading_card">
+                  <h2 class="h2 gray_title">Card heading</h2>
+                  <h5 class="h5">
+                    Here you can put the subheadings that you want. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Mauris
+                    venenatis, sapien lacinia tincidunt commodo, felis leo
+                    vehicula metus, et placerat mi velit et lacus
+                  </h5>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/b66fc5bf999cd6b7256e905a47093949.js"></script>
+          </div>
 
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/1bf8e37188a79e40ae0fb5fbc0cf5ef6.js"></script>
+          <div class="component_subtitle">Horizontal Card</div>
+          <div class="component_description">
+            Use horizontal cards if you want to place your image and text side
+            by side.
+          </div>
+          <div class="container_component">
+            <div class="card card_horizontal">
+              <div class="container_top">
+                <div class="img_card">
+                  <img src="./assets/ape-100.jpg" alt="A bored ape" />
                 </div>
-
-                <p class="component_description">
-                    You can use alerts with a closing button too.
-                </p>
-                <div class="wrapper_alert container_component">
-                    <div class="alert alert_danger alert_close" role="alert">
-                        <span class="material-icons">
-                            warning
-                        </span>
-                        
-                        An alert with a close button.
-
-                        <button class="alert_btn_close">
-                            <span class="material-icons round close">
-                                close
-                            </span>
-                        </button>
-                    </div>
-                    <div class="alert alert_success alert_close" role="alert">
-                                                
-                        A simple alert with a close button.
-
-                        <button class="alert_btn_close">
-                            <span class="material-icons round close">
-                                close
-                            </span>
-                        </button>
-                    </div>
+                <div class="heading_card">
+                  <h2 class="h2 gray_title">Bored Ape</h2>
+                  <h4 class="h4">by Vee</h4>
                 </div>
-
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/102e54f999f3cec4862421e5a0f2f571.js"></script>
+              </div>
+              <div class="container_bottom">
+                <div class="action_buttons">
+                  <a class="btn btn_primary btn_sm">
+                    <span class="material-icons round">flash_on</span>
+                    Buy now
+                  </a>
                 </div>
-                
-                <p class="component_subtitle">
-                    Javascript
-                </p>
-                
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/b6153a993c9499828f4268a4b3e78832.js"></script>
+                <div class="action_icons">
+                  <button>
+                    <span class="material-icons outlined icon">
+                      add_shopping_cart
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons outlined icon">
+                      favorite_border
+                    </span>
+                  </button>
+                  <button>
+                    <span class="material-icons two-tone icon">share</span>
+                  </button>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/09880768c8a471c95d24d4b71f533e35.js"></script>
+          </div>
+        </section>
 
-            <section id="badge" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Badges</h1>
-                    <p class="component_brief">Badges are used to show the active/inactive, online/offline status of users by using dots of some specific colors on their images.</p>
-                    <p class="component_description">You can these with the avatars. Use class <code class="code_text">badge_green</code> and <code class="code_text">badge_red</code> to change the color of dots.</p>
-                    <p class="component_subtitle">Badges on Avatars</p>
+        <section id="image" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Responsive images</h1>
+            <p class="component_brief">
+              Responsive images in chroma come under 2 categories: normal
+              responsive images and round reponsive images.
+            </p>
+          </div>
+          <div class="component_subtitle">Responsive Image</div>
+          <div class="component_description">
+            Use class
+            <code class="code_text">img_responsive</code>
+            to make the image reposive.
+          </div>
+          <div class="container_component">
+            <img
+              src="./assets/girl-face.jpg"
+              alt="A girl."
+              class="img_responsive" />
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/087529aa604d6569d026f2f617902f17.js"></script>
+          </div>
+          <div class="component_subtitle">Responsive round image</div>
+          <div class="component_description">
+            Add the class
+            <code class="code_text">img_round</code>
+            for the image to be round.
+          </div>
+          <div class="container_component">
+            <img
+              src="./assets/girl-face.jpg"
+              alt="A girl"
+              class="img_responsive img_round" />
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/8082506747d75380eacbb60d988f34b0.js"></script>
+          </div>
+        </section>
+
+        <section id="form" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Forms</h1>
+            <p class="component_brief">
+              Forms are used to take user data. Forms in chroma come under 2
+              categories viz. simple forms and forms with validation.
+            </p>
+          </div>
+          <div class="component_subtitle">Simple Form</div>
+          <div class="component_description">
+            Use the class
+            <code class="code_text">field_required</code>
+            if you want the field to be mandatory, with
+            <code class="code_text">required</code>
+            attribute in the input tag.
+          </div>
+          <div class="container_component">
+            <form class="form">
+              <label class="label field_required" for="email_id">
+                Email address
+              </label>
+              <input
+                id="email_id"
+                type="email"
+                placeholder="abc@example.com"
+                class="input block"
+                required />
+              <label class="label" for="textarea">TextArea</label>
+              <textarea
+                id="textarea"
+                type="text"
+                placeholder="Enter the message here..."
+                class="input block"
+                rows="4"></textarea>
+            </form>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/c974af531aded5edd8e2b4852d2209a9.js"></script>
+          </div>
+          <div class="component_subtitle">Form with validation</div>
+          <div class="component_description">
+            Use
+            <code class="code_text">form_valid</code>
+            class and id to check the validity of your forms.
+          </div>
+          <div class="container_component">
+            <form class="form form_valid" novalidate>
+              <div class="input_container">
+                <label for="username" class="label field_required">
+                  Username
+                </label>
+                <input
+                  type="text"
+                  id="username"
+                  class="input block form_field"
+                  required />
+                <div class="msg_success">
+                  <i class="fas fa-check-circle"></i>
+                  Looks good
                 </div>
-
-                <div class="container_component">
-                    <div class="avatar_circle__badge lg">
-                        <img class="avatar avatar_circle avatar_lg" src="./assets/girl-face.jpg" alt="girl">
-                        <div class="badge badge_green"></div>
-                    </div>
-
-                    <div class="avatar_circle__badge md">
-                        <img class="avatar avatar_circle avatar_md" src="./assets/girl-face.jpg" alt="girl">
-                        <div class="badge badge_red"></div>
-                    </div>
-
-                    <div class="avatar_circle__badge sm">
-                        <img class="avatar avatar_circle avatar_sm" src="./assets/girl-face.jpg" alt="girl">
-                        <div class="badge badge_green"></div>
-                    </div>
-
-                    <div class="avatar_circle__badge xs">
-                        <img class="avatar avatar_circle avatar_xs" src="./assets/girl-face.jpg" alt="girl">
-                        <div class="badge badge_red"></div>
-                    </div>
-
+                <div class="msg_error">
+                  <i class="fas fa-exclamation-circle"></i>
+                  Enter the correct username
                 </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/5135f39dff2a73c67277ba5a44074ab7.js"></script>
+              </div>
+              <div class="input_container">
+                <label for="email" class="label field_required">Email</label>
+                <input type="email" class="input block" id="email" required />
+                <div class="msg_success">
+                  <i class="fas fa-check-circle"></i>
+                  Looks good
                 </div>
-                <p class="component_subtitle">Badges on icons</p>
-                <p class="component_description">Icons on the badges come with 2 sizes viz. small and medium. You don't need to do something for small icons, but to use medium ones, you need to use <code class="code_text">md</code> class as shown in the code.</p>
-                <div class="container_component">
+                <div class="msg_error">
+                  <i class="fas fa-exclamation-circle"></i>
+                  Enter the correct email
+                </div>
+              </div>
+              <div class="input_container">
+                <label for="country" class="label">Select your country:</label>
+                <select name="country" id="country" class="select">
+                  <option value="India">India</option>
+                  <option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                  <option value="Australia">Australia</option>
+                </select>
+              </div>
+              <div class="input_container">
+                <input type="checkbox" id="check_box" required />
+                <label for="check_box" class="label field_required">
+                  I agree to the terms of service.
+                </label>
+                <div class="msg_success">
+                  <i class="fas fa-check-circle"></i>
+                  Looks good
+                </div>
+                <div class="msg_error">
+                  <i class="fas fa-exclamation-circle"></i>
+                  Please accept the terms of services.
+                </div>
+              </div>
+              <button
+                class="btn btn_sm btn_primary"
+                type="submit"
+                form="form_valid">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/68f5f4c779be43eaf7775ba41a219709.js"></script>
+          </div>
+          <div class="component_subtitle">Javascript</div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/c31ff8f780f2f17e9335fefeeef5e700.js"></script>
+          </div>
+        </section>
+
+        <section id="typography" class="section typography">
+          <div class="section_brief">
+            <h1 class="component_title">Typography</h1>
+            <p class="component_brief">
+              You can use classes
+              <code class="code_text">h1</code>
+              ,
+              <code class="code_text">h2</code>
+              ,
+              <code class="code_text">h3</code>
+              ,
+              <code class="code_text">h4</code>
+              ,
+              <code class="code_text">h5</code>
+              ,
+              <code class="code_text">h6</code>
+              to use Chroma's font sizes.
+            </p>
+          </div>
+          <div class="component_subtitle">Headings</div>
+          <div class="container_component flex_col">
+            <h1 class="h1">Heading 1</h1>
+            <h2 class="h2">Heading 2</h2>
+            <h3 class="h3">Heading 3</h3>
+            <h4 class="h4">Heading 4</h4>
+            <h5 class="h5">Heading 5</h5>
+            <h6 class="h6">Heading 6</h6>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/faf614eec91f45e5a2800c4d5297a2e4.js"></script>
+          </div>
+          <div class="component_subtitle">Paragraph Text</div>
+          <div class="component_description">
+            These are generally used with
+            <code class="code_text">&#x3C;p&#x3E;</code>
+            tags. Use classes
+            <code class="code_text">txt_rg</code>
+            ,
+            <code class="code_text">txt_lg</code>
+            ,
+            <code class="code_text">txt_md</code>
+            , and
+            <code class="code_text">txt_sm</code>
+            for text of regular, large, medium and small sizes.
+          </div>
+          <div class="container_component flex_col">
+            <p class="txt_lg">This is a large text.</p>
+            <p class="txt_md">This is a medium text.</p>
+            <p class="txt_rg">This is a regular text.</p>
+            <p class="txt_sm">This is a small text.</p>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/d6e0b760e6352ddf2bdb0d292926279f.js"></script>
+          </div>
+          <div class="component_subtitle">Text Weights</div>
+          <div class="component_description">
+            Chroma provide you with different font-weigths ranging from light to
+            bolder. Use class
+            <code class="code_text">txt_light</code>
+            for lighest and
+            <code class="code_text">txt_boldest</code>
+            for boldest text of Chroma.
+          </div>
+          <div class="container_component flex_col">
+            <p class="txt_boldest">This is the boldest text.</p>
+            <p class="txt_bold">This is a bold text.</p>
+            <p class="txt_semibold">This is a semi-bold text.</p>
+            <p class="txt_regualr">This is a regular text.</p>
+            <p class="txt_light">This is a light text.</p>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/7bd4a27f5aa7bd2c045ca69cc693a49a.js"></script>
+          </div>
+          <div class="component_subtitle">Text alignment and gray text</div>
+          <div class="component_description">
+            Chroma comes with 2 types of gray text viz.
+            <code class="code_text">gray_primary</code>
+            , for headings and
+            <code class="code_text">gray_secondary</code>
+            , for the content. You can also use
+            <code class="code_text">txt_right</code>
+            and
+            <code class="code_text">txt_center</code>
+            to adjust the alignment of text accordingly. Use
+            <code class="code_text">txt_strike__through</code>
+            for using strike through text.
+          </div>
+          <div class="container_component text_alignment">
+            <p class="gray_primary txt_bold">Primary gray text.</p>
+            <p class="gray_secondary txt_bold">Seconday gray text.</p>
+            <p class="txt_center txt_bold txt_strike__through">
+              A strike through center text.
+            </p>
+            <p class="txt_right txt_bold">A right aligned text.</p>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/0544a5bdfbcc05211b3614b40ed505eb.js"></script>
+          </div>
+        </section>
+
+        <section id="snackbar" class="section snackbar">
+          <div class="section_brief">
+            <h1 class="component_title">Snackbars</h1>
+            <p class="component_brief">
+              Snackbars can be used to display notifications for a few time.
+            </p>
+          </div>
+          <div class="component_subtitle">Simple snackbar</div>
+          <div class="component_description">
+            A simple snackbar includes all of it's content in a single line.
+          </div>
+          <div class="container_component">
+            <div class="snackbar_notification flex">
+              <span class="h5 gray_title">Try again in 5 minutes.</span>
+              <div class="snackbar_buttons flex">
+                <button class="span_button btn h6">Retry</button>
+                <button class="btn">
+                  <span class="material-icons round close">close</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/c9422f592c31c16c97cf7f07c24ae0fb.js"></script>
+          </div>
+          <div class="component_subtitle">Stacked snackbar</div>
+          <div class="component_description">
+            For stacked notifications, add
+            <code class="code_text">snackbar_stacked</code>
+            class.
+          </div>
+          <div class="container_component">
+            <div class="snackbar_notification snackbar_stacked flex">
+              <span class="h5 gray_title">Try again in 5 minutes.</span>
+              <div class="snackbar_buttons flex">
+                <button class="btn span_button h6">Retry</button>
+                <button class="btn">
+                  <span class="material-icons round close">close</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/c9422f592c31c16c97cf7f07c24ae0fb.js"></script>
+          </div>
+        </section>
+
+        <section id="navigation" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Navigation</h1>
+            <p class="component_brief">
+              Navbars are used for navigation in a website. These contain handy
+              links of the places where you'd want to visit just in a tap.
+            </p>
+          </div>
+          <div class="component_subtitle">A simple Navbar</div>
+          <div class="container_component">
+            <nav class="navbar flex">
+              <div class="logo">
+                <h2>Logo</h2>
+              </div>
+              <div class="navbar_search flex">
+                <input
+                  class="search_box"
+                  type="search"
+                  placeholder="Search for products here" />
+                <button class="btn">
+                  <span class="material-icons outlined">search</span>
+                </button>
+              </div>
+              <ul class="navbar_links flex">
+                <li>
+                  <a class="btn btn_primary btn_sm">Login</a>
+                </li>
+                <li>
+                  <a class="btn btn_outline btn_sm">Signup</a>
+                </li>
+                <li>
+                  <a class="navbar_cart">
                     <div class="icon_badge">
-                        <span class="material-icons outlined">
-                            shopping_cart
-                        </span>
-                        <div class="badge badge_red ">8</div>
+                      <span class="material-icons outlined">shopping_cart</span>
+                      <div class="badge badge_red">10</div>
                     </div>
-                    <div class="icon_badge">
-                        <span class="material-icons outlined ">
-                            notifications
-                        </span>
-                        <div class="badge badge_red ">8</div>
-                    </div>
-                    <div class="icon_badge">
-                        <span class="material-icons outlined md">
-                            shopping_cart
-                        </span>
-                        <div class="badge badge_red md">8</div>
-                    </div>
-                    <div class="icon_badge">
-                        <span class="material-icons outlined md">
-                            notifications
-                        </span>
-                        <div class="badge badge_red md">8</div>
-                    </div>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/efb9112e6ec6cfaffdbcac5b2b45c44d.js"></script>
-                </div>
-
-            </section>
-
-            <section id="button" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Buttons</h1>
-                    <p class="component_brief">Use Chroma's buttons for cards, call to actions, forms, dialogs, navigation, etc.</p>
-                    <p class="component_description">Buttons come in a variety ranging from primary and secondary to icon and disabled buttons.</p>
-                </div> 
-                <div class="container_component wrapper_button">
-                    <a href="#" class="btn btn_sm btn_primary">Primary</a>
-                    <a href="#" class="btn btn_sm btn_secondary">Secondary</a>
-                    <a href="#" class="btn btn_sm btn_outline">Outline</a>
-                    <a href="#" class="btn btn_sm btn_success">Success</a>
-                    <a href="#" class="btn btn_sm btn_danger">Danger</a>
-                    <a href="#" class="btn btn_sm btn_warning">Warning</a>
-                    <a href="#" class="btn btn_sm btn_info">Info</a>
-                </div>
-
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/8f33f004b9bb088e2055cb4f951c2566.js"></script>
-                </div>
-
-                <div class="component_subtitle">
-                    Disabled button
-                </div>
-
-                <div class="container_component">
-                    <a href="#" class="btn btn_sm btn_danger btn_disabled">Disabled</a>
-                </div>
-
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/5c92798b89b6450227d9c588f519eebc.js"></script>
-                </div>
-
-                <div class="component_subtitle">
-                    Button Sizes
-                </div>
-
-                <div class="component_description">
-                    Buttons come in 2 sizes in chroma. Use <code class="code_text">btn_sm</code> class for small buttons and <code class="code_text">btn_lg</code> class for large buttons.
-                </div>
-
-                <div class="container_component wrapper_button">
-                    <a href="#" class="btn btn_lg btn_primary">Large Button</a>
-                    <a href="#" class="btn btn_sm btn_primary">Small Button</a>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/244d4791722954cfc5fcc8d0ce73a4a7.js"></script>
-                </div>
-
-                <div class="component_subtitle">
-                    Button Link and Button Icon
-                </div>
-
-                <div class="container_component">
-                    <a href="#" class="btn_link">Button Link</a>
-                    <a href="#" class="btn_icon">
-                        <span class="material-icons outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-                </div>
-
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/eb7a3a881f861a50bf8f58ffe6754485.js"></script>
-                </div>
-
-                <div class="component_subtitle">
-                    Floating action button and Toggle button
-                </div>
-
-                <div class="container_component">
-                    <a href="#" class="btn_floating">
-                        <span class="material-icons outlined">
-                            add
-                        </span>
-                    </a>
-
-                    <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/39a34f88a625c182ae291947fe932ecd.js"></script>
-                </div>
-            </section>
-            
-            <section id="card" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Cards</h1>
-                    <p class="component_brief">Cards in chroma come in different sizes and orientation.</p>
-                </div>
-                <div class="component_subtitle">
-                    Card with badge
-                </div>
-                <div class="component_description">
-                    Badges are put on cards to show discount, stock status, etc.
-                </div>
-                <div class="container_component">
-                    <div class="card card_w_badge">
-                        <div class="container_top">
-                            <div class="img_card">
-                                <img src="./assets/ape-300px.jpg" alt="A bored ape">
-                                <span class="card_rating">
-                                    4.5<span class="material-icons round rate_star">
-                                            star_rate
-                                        </span>
-                                    </span>
-                                <div class="card_badge">Sold out</div>
-                            </div>
-                            <div class="heading_card">
-                                <h2 class="h2">Bored Ape</h2>
-                                <h4 class="h4">by Vee</h4>
-                            </div>
-                            <div class="description">
-                                <p class="h3">Rs.5000</p>   
-                                <p class="h4 strikethrough">Rs.6000</p>   
-                            </div>
-                        </div> 
-                
-                        <div class="container_bottom">
-                            <div class="action_buttons">
-                                <a href="#" class="btn btn_primary btn_sm ">
-                                    <span class="material-icons round">
-                                        flash_on
-                                    </span>Buy now</a>
-                            </div>
-                            
-                            <div class="action_icons">
-                                <button>
-                                    <span class="material-icons outlined icon">
-                                        add_shopping_cart
-                                    </span>
-                                </button>
-                                <button>
-                                    <span class="material-icons outlined icon">
-                                        favorite_border
-                                    </span>
-                                </button>
-                                <button>
-                                    <span class="material-icons two-tone icon">
-                                        share
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-                
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/0c98b78879c875865e663ec0193c0549.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Card with dismiss
-                </div>
-                <div class="component_description">
-                    Chroma provides you with dismissible cards so the users don't waste their time on the items they don't like.
-                </div>
-                
-                <div class="container_component">
-                    <div class="card card_dismiss">
-                        <div class="btn_card__close">
-                            <span class="material-icons round card_close">
-                                highlight_off
-                            </span>
-                        </div>
-                        <div class="container_top">
-                            <div class="img_card">
-                                <img src="./assets/ape-300px.jpg" alt="A bored ape">
-                                <span class="card_rating">
-                                    4.5<span class="material-icons round rate_star">
-                                        star_rate
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="heading_card">
-                                <h2 class="h2">Bored Ape</h2>
-                                <h4 class="h4">by Vee</h4>
-                            </div>
-                            <div class="description">
-                                <p class="h3">Rs.5000</p>   
-                                <p class="h4 strikethrough">Rs.6000</p>   
-                            </div>
-                        </div> 
-            
-                        <div class="container_bottom">
-                            <div class="action_buttons">
-                                <a href="#" class="btn btn_primary btn_sm ">
-                                    <span class="material-icons round">
-                                        flash_on
-                                    </span>Buy now</a>
-                            </div>
-                            
-                            <div class="action_icons">
-                                <button>
-                                    <span class="material-icons outlined icon">
-                                        add_shopping_cart
-                                    </span>
-                                </button>
-                                <button>
-                                    <span class="material-icons outlined icon">
-                                        favorite_border
-                                    </span>
-                                </button>
-                                <button>
-                                    <span class="material-icons two-tone icon">
-                                        share
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>      
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/6feb0a3134a94d05851e36a0c15deb3f.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Javascript
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/47a917b989fcb7947f598ddfce9a687c.js"></script>
-                </div>
-
-                <div class="component_subtitle">
-                    Card with text overlay
-                </div>
-                <div class="component_description">
-                    Overlays are used on cards to showcase things like unavalability of items. You need to add the class <code class="code_text">card_overlay</code> on the card and a container with a class <code class="code_text">overlay_div</code> inside the card.
-                </div>
-                <div class="container_component">             
-                        <div class="card card_w_badge card_overlay">
-                            <div class="overlay_div">
-                                <div class="overlay_text">
-                                    <h2 class="h2">Out Of Stock</h2>
-                                </div>
-                            </div>
-                            <div class="btn_card__close">
-                                <span class="material-icons round card_close">
-                                    highlight_off
-                                </span>
-                            </div>
-                            <div class="container_top">
-                                <div class="img_card">
-                                    <img src="./assets/ape-300px.jpg" alt="A bored ape">
-                                    <span class="card_rating">
-                                        4.5<span class="material-icons round rate_star">
-                                            star_rate
-                                        </span>
-                                    </span>
-                                </div>
-                                <div class="heading_card">
-                                    <h2 class="h2">Bored Ape</h2>
-                                    <h4 class="h4">by Vee</h4>
-                                </div>
-                                <div class="description">
-                                    <p class="h3">Rs.5000</p>   
-                                    <p class="h4 strikethrough">Rs.6000</p>   
-                                </div>
-                            </div> 
-                
-                            <div class="container_bottom">
-                                <div class="action_buttons">
-                                    <a href="#" class="btn btn_primary btn_sm ">
-                                        <span class="material-icons round">
-                                            flash_on
-                                        </span>Buy now</a>
-                                </div>
-                                
-                                <div class="action_icons">
-                                    <button>
-                                        <span class="material-icons outlined icon">
-                                            add_shopping_cart
-                                        </span>
-                                    </button>
-                                    <button>
-                                        <span class="material-icons outlined icon">
-                                            favorite_border
-                                        </span>
-                                    </button>
-                                    <button>
-                                        <span class="material-icons two-tone icon">
-                                            share
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>                   
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/a2ee9088f176d53571ec26db19ee2969.js"></script>
-                </div>
-
-                <div class="component_subtitle">
-                    Card with text only
-                </div>
-                <div class="container_component">
-                    <div class="card card_text">
-                        <div class="container_top">                          
-                            <div class="heading_card">
-                                <h2 class="h2">Card heading</h2>
-                                <h4 class="h4">Here you can put the subheadings that you want. 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Mauris venenatis, sapien lacinia tincidunt commodo, felis
-                                     leo vehicula metus, et placerat mi velit et lacus
-                                </h4>
-                            </div>                           
-                        </div> 
-                    </div> 
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/e648f07111d9b75a157984e75ce8c883.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Horizontal Card
-                </div>
-                <div class="componet_description">
-                    Use horizontal cards if you want to place your image and text side by side.
-                </div>
-                <div class="container_component">
-                    <div class="card card_horizontal">
-                        <div class="container_top">  
-                            <div class="img_card">
-                                <img src="./assets/ape-100.jpg" alt="A bored ape">                           
-                            </div>
-                            <div class="heading_card">
-                                <h2 class="h2">Bored Ape</h2>
-                                <h4 class="h4"> by Vee</h4>
-                            </div>
-                        </div>
-                            
-                        <div class="container_bottom"> 
-                            <div class="action_buttons">
-                                <a href="#" class="btn btn_primary btn_sm">
-                                    <span class="material-icons round">
-                                        flash_on
-                                    </span>
-                                    Buy now
-                                </a>
-                            </div>                                                            
-                            <div class="action_icons">
-                                <button>
-                                    <span class="material-icons outlined icon">
-                                        add_shopping_cart
-                                    </span>
-                                </button>
-                                <button>
-                                    <span class="material-icons outlined icon">
-                                        favorite_border
-                                    </span>
-                                </button>
-                                <button>
-                                    <span class="material-icons two-tone icon">
-                                        share
-                                    </span>
-                                </button>
-                            </div>
-                        </div>                    
-                    </div>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/09880768c8a471c95d24d4b71f533e35.js"></script>
-                </div>
-            </section>
-
-            <section id="image" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Responsive images</h1>
-                    <p class="component_brief">Responsive images in chroma come under 2 categories: normal responsive images and round reponsive images.</p>                  
-                </div>
-                <div class="component_subtitle">
-                    Responsive Image
-                </div>
-                <div class="component_description">
-                    Use class <code class="code_text">img_responsive</code> to make the image reposive.
-                </div>
-                <div class="container_component">
-                    <img src="./assets/girl-face.jpg" alt="A girl." class="img_responsive">
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/087529aa604d6569d026f2f617902f17.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Responsive round image
-                </div>
-                <div class="component_description">
-                    Add the class <code class="code_text">img_round</code> for the image to be round.
-                </div>
-                <div class="container_component">
-                    <img src="./assets/girl-face.jpg" alt="A girl" class="img_responsive img_round">
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/8082506747d75380eacbb60d988f34b0.js"></script>
-                </div>
-            </section>
-
-            <section id="form" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Forms</h1>
-                    <p class="component_brief">Forms are used to take user data. Forms in chroma come under 2 categories viz. simple forms and forms with validation.</p>
-                </div>
-                <div class="component_subtitle">
-                    Simple Form
-                </div>
-                <div class="component_description">
-                    Use the class <code class="code_text">field_required</code> if you want the field to be mandatory, with <code class="code_text">required</code> attribute in the input tag.
-                </div>
-                <div class="container_component">
-                    <form class="form">
-                        <label class="label field_required" for="email_id">
-                            Email address
-                        </label>
-                        <input
-                            id="email_id"
-                            type="email"
-                            placeholder="abc@example.com" 
-                            class="input block"
-                            required
-                        >
-                        <label class="label" for="textarea">
-                            TextArea
-                        </label>
-                        <textarea
-                        id="textarea" 
-                        type="text"
-                        placeholder="Enter the message here..."
-                        class="input block"
-                        rows="4"
-                        >
-                        </textarea>
-                    </form>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/c974af531aded5edd8e2b4852d2209a9.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Form with validation
-                </div>
-                <div class="component_description">
-                    Use <code class="code_text">form_valid</code> class and id to check the validity of your forms.
-                </div>
-                <div class="container_component">
-                    <form class="form form_valid" id="form_valid" novalidate>
-                        <div class="input_container">
-                            <label for="username" class="label field_required">
-                                Username
-                            </label>
-                            <input
-                            type="text" 
-                            id="username" 
-                            class="input block form_field" 
-                                required
-                                >
-                                <div class="msg_success">
-                                <i class="fas fa-check-circle"></i>
-                                Looks good                                
-                            </div>
-                            <div class="msg_error">
-                                <i class="fas fa-exclamation-circle"></i>
-                                Enter the correct username                   
-                            </div>
-                        </div>
-                        <div class="input_container">
-                            <label for="email" class="label field_required">
-                                Email
-                            </label>
-                            <input 
-                            type="email" 
-                            class="input block" 
-                            id="email"
-                            required
-                            >
-                            <div class="msg_success">
-                                <i class="fas fa-check-circle"></i>
-                                Looks good                                
-                            </div>
-                            <div class="msg_error">
-                                <i class="fas fa-exclamation-circle"></i>
-                                Enter the correct email                   
-                            </div>
-                        </div>
-                        <div class="input_container">
-                            <label for="country" class="label">Select your country:</label>
-                            <select name="country" id="country" class="select">
-                                <option value="India">India</option>
-                                <option value="USA">USA</option>
-                                <option value="UK">UK</option>
-                                <option value="Australia">Australia</option>
-                            </select>
-                        </div>
-                        <div class="input_container">
-                            <input 
-                                type="checkbox" 
-                                id="check_box"
-                                required
-                            >
-                            <label 
-                                for="check_box" 
-                                class="label field_required"
-                            >
-                                I agree to the terms of service.
-                            </label>
-                            <div class="msg_success">
-                                <i class="fas fa-check-circle"></i>
-                                Looks good                                
-                            </div>
-                            <div class="msg_error">
-                                <i class="fas fa-exclamation-circle"></i>
-                                Please accept the terms of services.                  
-                            </div>
-                        </div>
-                            <button class="btn btn_sm btn_primary" type="submit" form="form_valid">
-                                Submit
-                            </button>
-                    </form>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/68f5f4c779be43eaf7775ba41a219709.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Javascript
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/c31ff8f780f2f17e9335fefeeef5e700.js"></script>
-                </div>
-            </section>
-
-            <section id="typography" class="section typography">
-                <div class="section_brief">
-                    <h1 class="component_title">
-                        Typography
-                    </h1>
-                    <p class="component_brief">You can use classes <code class="code_text">h1</code>, <code class="code_text">h2</code>, <code class="code_text">h3</code>, <code class="code_text">h4</code>, <code class="code_text">h5</code>, <code class="code_text">h6</code> to use Chroma's font sizes.</p>
-                </div>
-                <div class="component_subtitle">
-                    Headings
-                </div>
-                <div class="container_component flex_col">
-                    <h1 class="h1">Heading 1</h1>
-                    <h2 class="h2">Heading 2</h2>
-                    <h3 class="h3">Heading 3</h3>
-                    <h4 class="h4">Heading 4</h4>
-                    <h5 class="h5">Heading 5</h5>
-                    <h6 class="h6">Heading 6</h6>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/faf614eec91f45e5a2800c4d5297a2e4.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Paragraph Text
-                </div>
-                <div class="component_description">
-                    These are generally used with <code class="code_text">&#x3C;p&#x3E;</code> tags. Use classes <code class="code_text">txt_rg</code>, <code class="code_text">txt_lg</code>, <code class="code_text">txt_md</code>, and <code class="code_text">txt_sm</code> for text of regular, large, medium and small sizes.
-                </div>
-                <div class="container_component flex_col">
-                    <p class="txt_lg">This is a large text.</p>
-                    <p class="txt_md">This is a medium text.</p>
-                    <p class="txt_rg">This is a regular text.</p>
-                    <p class="txt_sm">This is a small text.</p>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/d6e0b760e6352ddf2bdb0d292926279f.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Text Weights
-                </div>
-                <div class="component_description">
-                    Chroma provide you with different font-weigths ranging from light to bolder. Use class <code class="code_text">txt_light</code> for lighest and <code class="code_text">txt_boldest</code> for boldest text of Chroma.
-                </div>
-                <div class="container_component flex_col">
-                    <p class="txt_boldest">This is the boldest text.</p>
-                    <p class="txt_bold">This is a bold text.</p>
-                    <p class="txt_semibold">This is a semi-bold text.</p>
-                    <p class="txt_regualr">This is a regular text.</p>
-                    <p class="txt_light">This is a light text.</p>
-                </div>
-                <div class="component_subtitle">
-                    Text alignment and gray text
-                </div>
-                <div class="component_description">
-                    Chroma comes with 2 types of gray text viz. <code class="code_text">gray_primary</code>, for headings and <code class="code_text">gray_secondary</code>, for the content.
-                    You can also use <code class="code_text">txt_right</code> and <code class="code_text">txt_center</code> to adjust the alignment of text accordingly. Use <code class="code_text">txt_strike__through</code> for using strike through text.
-                </div>
-                <div class="container_component text_alignment">
-                    <p class="gray_primary txt_bold">Primary gray text.</p>
-                    <p class="gray_secondary txt_bold">Seconday gray text.</p>
-                    <p class="txt_center txt_bold txt_strike__through">A strike through center text.</p>
-                    <p class="txt_right txt_bold">A right aligned text.</p>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/0544a5bdfbcc05211b3614b40ed505eb.js"></script>   
-                </div>
-            </section>
-
-            <section id="snackbar" class="section snackbar">
-                <div class="section_brief">
-                    <h1 class="component_title">Snackbars</h1>
-                    <p class="component_brief">Snackbars can be used to display notifications for a few time.</p>
-                </div>
-                <div class="component_subtitle">
-                    Simple snackbar
-                </div>
-                <div class="component_description">
-                    A simple snackbar includes all of it's content in a single line.
-                </div>
-                <div class="container_component">
-                    <div class="snackbar_notification flex">
-                        <span class="h5">Try again in 5 minutes.</span>
-                        <div class="snackbar_buttons flex">
-                            <span class="span_button h6">Retry</span>
-                            <span class="material-icons round close">close</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/c9422f592c31c16c97cf7f07c24ae0fb.js"></script>
-                </div>
-                <div class="component_subtitle">
-                    Stacked snackbar
-                </div>
-                <div class="component_description">
-                    For stacked notifications, add <code class="code_text">snackbar_stacked</code> class.
-                </div>
-                <div class="container_component">
-                    <div class="snackbar_notification snackbar_stacked flex">
-                        <span class="h5">Try again in 5 minutes.</span>
-                        <div class="snackbar_buttons flex">
-                            <span class="span_button h6">Retry</span>
-                            <span class="material-icons round close">close</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/7c16175cbaebecbcb52067f4efdc94ac.js"></script>
-                </div>
-                
-            </section>
-
-            <section id="navigation" class="section">
-                <div class="section_brief">
-                    <h1 class="component_title">Navigation</h1>
-                    <p class="component_brief">Navbars are used for navigation in a website. These contain handy links of the places where you'd want to visit just in a tap.</p>
-                </div>
-                <div class="component_subtitle">
-                    A simple Navbar
-                </div>
-                <div class="container_component">
-                    <nav class="navbar flex">
-                        <div class="logo">
-                            <h2>Logo</h2>
-                        </div>
-                        <div class="navbar_search flex">
-                            <input class="search_box" type="search" placeholder="Search for products here..."></input>
-                            <button class="btn">
-                                <span class="material-icons outlined">
-                                    search
-                                </span>
-                            </button>
-                        </div>
-                        <ul class="navbar_links flex">
-                                <li>
-                                    <a href="#" class="btn btn_primary btn_sm">Login</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn_outline btn_sm">Signup</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navbar_cart">
-                                        <div class="icon_badge">
-                                            <span class="material-icons outlined">
-                                                shopping_cart
-                                            </span>
-                                            <div class="badge badge_red ">10</div>
-                                        </div>
-                                    </a>
-                                </li>
-                        </ul>
-                        <div class="navbar_burger flex">
-                            <span class="material-icons outlined">
-                                menu
-                            </span>
-                        </div>
-                    </nav>
-                </div>
-                <div class="code_snippet">
-                    <script src="https://gist.github.com/saadahmadhere/698772a1028b874944827838d9c706b1.js"></script>
-                </div>
-            </section>
-            
-        </main>
-        
-        
+                  </a>
+                </li>
+              </ul>
+              <div class="navbar_burger flex">
+                <span class="material-icons outlined">menu</span>
+              </div>
+            </nav>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/698772a1028b874944827838d9c706b1.js"></script>
+          </div>
+        </section>
+      </main>
     </section>
 
     <footer id="footer">
-        <h3 class="footer_heading">
-            Made with {&#9829;} by
-            <a href="https://saadahmad.netlify.app/">
-                 Saad Ahmad
-            </a>
-        </h3>
-        <div class="footer_social">
-            <a href="https://twitter.com/imsaadahmad" target= "_blank">
-                <i class="fab fa-twitter fa-lg"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/saadahmadhere/" target= "_blank">
-                <i class="fab fa-linkedin-in fa-lg"></i>
-            </a>
-            <a href="https://github.com/saadahmadhere" target= "_blank">
-                <i class="fab fa-github fa-lg"></i>
-            </a>
-        </div>
+      <h3 class="footer_heading">
+        Made with {&#9829;} by
+        <a href="https://saadahmad.netlify.app/">Saad Ahmad</a>
+      </h3>
+      <div class="footer_social">
+        <a href="https://twitter.com/imsaadahmad" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/saadahmadhere/" target="_blank">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+        <a href="https://github.com/saadahmadhere" target="_blank">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+      <h5>v 1.0.0</h5>
     </footer>
-        
+
     <a href="#" class="btn_floating btn_to__top">
-        <span class="material-icons round">
-            arrow_upward
-        </span>
+      <span class="material-icons round">arrow_upward</span>
     </a>
-    
+
     <script src="./components/component.js"></script>
     <script src="./docs/doc.js"></script>
-</body>
+  </body>
 </html>

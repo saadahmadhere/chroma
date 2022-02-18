@@ -1,13 +1,12 @@
 .card{
     position: relative;
-    width: 300px;
+    width: 18.75rem;
     border-radius: 4px;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px var(--gray-700);
+    box-shadow: 4px 4px 12px var(--gray-700);
 }
 
 /* Card dismiss */
-
 .card_dismiss{
     position: relative;
 }
@@ -20,11 +19,10 @@
 
 .btn_card__close:hover{
     cursor: pointer;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 /* Card overlay */
-
 .card_w_badge .card_overlay{
     display: relative;
 }
@@ -39,36 +37,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .overlay_div .overlay_text{
     background-color: var(--gray-400);
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 8px;
     color: var(--gray-800);
 }
 
 /* Card text only */
-
-.card.card_text .h4{
-    font-size: 1.125rem;
-    color: var(--gray-400);
-    font-weight: 400;
+.card.card_text .h5{
     margin-top: 8px;
     padding: 8px;
     border-top: 1px solid;
 }
 
 /* Card horizontal */
-
 .card_horizontal .img_card{
-    height: 100px;
-    width: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
 }
 
 .card_horizontal .container_bottom{
     padding: 8px;
 }
+
 .card_horizontal .container_top{
     display: flex;
     align-items: center;
@@ -77,11 +72,10 @@
 .card.card_horizontal .img_card img{
     border-top-right-radius: 0;
 }
-/* ////////////////// */
 
 .img_card{
     position: relative;
-    height: 200px;
+    height: 12.5rem;
     z-index: -1;
 }
 
@@ -105,14 +99,7 @@
 }
 
 .card .h3{
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-right: 10px;
-}
-
-.card .h4{
-    font-size: 1rem;
-    color: var(--gray-600);
+    margin-right: 8px;
 }
 
 .card .description{
@@ -123,7 +110,7 @@
 }
 
 .description{
-    color: var(--gray-300);
+    color: var(--gray-content);
     padding: 1rem;
 }
 
@@ -139,28 +126,23 @@
 .card .card_rating{
     bottom: 4px;
     left:4px;
-    font-size: .75rem;
+    font-size: 0.75rem;
     border-radius: 4px;
 }
 
 .card .card_badge{
     top: 0;
     right: 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 600;
     border-bottom-left-radius: 4px;
 }
-
-
 .material-icons.rate_star{
     font-size: 1rem;
-    color: var(--golden-400);
+    color: var(--golden-rating);
 }
 
-
-
 /* BOTTOM CONTAINER */
-
 .card .container_bottom{
     display: flex;
     justify-content: center;
@@ -193,9 +175,7 @@
     cursor: pointer;
 }
 
-
 @media only screen and (max-width: 370px) {
-
     .action_icons{
         margin: auto;
     }

@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #339af0;
+  --link: #777777;
+  --link-hover: #4993cf;
+  --primary-text-color: #396597;
+  --border: #44444417;
+  --border-dark: #24222285;
+  --heading: #444444;
+  --content: #495057;
+  --box-shadow: #00000009;
+  --code-snippet-bg: #cec8c8;
+  --toggle-background: #ccc;
+
+  /* Badges */
+  --badge-red: #e20606;
+  --badge-green: #22d822;
+
+  /* Alerts */
+  --alert-primary: #9bd9ff;
+  --alert-success: #d1e7dd;
+  --alert-secondary: #e2e3e5;
+  --alert-danger: #f8d7da;
+  --alert-warning: #fff3cd;
+  --alert-success-icon: #047040;
+  --alert-danger-icon: #d65959;
+  --alert-warning-icon: #fcd34c;
+  --avatar-text-background: #9bd9ff;
+
+  /* Buttons */
+  --btn-primary-text: #fff;
+  --secondary-btn: #888a8b;
+  --secondary-btn-hover: #717374;
+  --success-btn: #157347;
+  --danger-btn: #bb2d3b;
+  --warning-btn: #ffc107;
+  --info-btn: #31d2f2;
+  --btn-black-text: #000000cc;
+
+  /* Cards */
+  --rating-bg: #cec8c8fa;
+  --golden-rating: #ff9529;
+
+  /* Gray */
+  --gray-100: #181818;
+  --gray-200: #404040;
+  --gray-300: #505050;
+  --gray-400: #808080;
+  --gray-500: #a0a0a0;
+  --gray-600: #bebebe;
+  --gray-700: #d0d0d0;
+  --gray-800: #f5f5f5;
+
+  /* Colors */
+  --black-100: #000000cc;
+  --red-400: #f02a2a;
+  --purple: #36195a;
+  --white: white;
+
+  /* Form validation */
+  --form-success: #2ecc71;
+  --form-error: #e74c3c;
+
+  /* navigation */
+  --navbar-bg: #2874f0;
+  --navbar-btn-primary: #ffe500;
+}
