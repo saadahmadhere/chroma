@@ -74,7 +74,7 @@ To use styles provided by Chroma, add the following `link` element in your `head
 
 ### Let's connect
 
-[![](https://img.shields.io/twitter/follow/imsaadahmad?style=social)](https://twitter.com/imsaadahmad)
+[![](https://img.shields.io/twitter/url?label=Twitter&style=social&url=https%3A%2F%2Ftwitter.com%2Fimsaadahmad)](https://twitter.com/imsaadahmad)
 [![](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white0e76a8)](https://www.linkedin.com/in/saadahmadhere/)
 
 ---
