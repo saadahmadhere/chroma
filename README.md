@@ -37,7 +37,7 @@ To use styles provided by Chroma, add the following `link` element in your `head
   - Button with link and icon
   - Floating action and Toggle Button
 
-- [Card](https://chroma-ui.netlify.app/documentation.html#)
+- [Card](https://chroma-ui.netlify.app/documentation.html#card)
 
   - Card with badge
   - Card with dismiss
