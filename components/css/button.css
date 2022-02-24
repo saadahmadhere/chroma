@@ -1,34 +1,32 @@
 .btn {
-  border-radius: 4px;
-  color: var(--btn-primary-text);
+  border-radius: var(--size-1);
   transition: 0.3s;
   opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 .btn_lg {
-  padding: 1.2rem 2rem;
+  padding: var(--size-5) var(--size-8);
 }
 
 .btn_sm {
-  padding: 8px 1rem;
+  padding: var(--size-2) var(--size-4);
 }
 
 .btn_primary {
   background-color: var(--primary-color);
-}
-
-.btn_primary:hover,
-.btn_secondary:hover,
-.btn_success:hover,
-.btn_danger:hover,
-.btn_warning:hover,
-.btn_info:hover,
-.btn_floating:hover,
-.btn:hover {
-  opacity: 0.8;
 }
 
 .btn_secondary {
@@ -68,12 +66,20 @@
   cursor: not-allowed;
 }
 
-.btn_link {
-  border-bottom: 1px solid var(--primary-color);
+.btn_success,
+.btn_danger,
+.btn_primary,
+.btn_secondary,
+.btn_disabled {
+  color: var(--btn-primary-text);
 }
 
-.btn_link:hover,
-.btn_icon:hover {
+.btn_link {
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.btn_link:hover {
   color: var(--primary-color);
 }
 
@@ -83,16 +89,16 @@
   justify-content: center;
   background-color: var(--primary-color);
   color: var(--btn-primary-text);
-  height: 3rem;
-  width: 3rem;
+  height: var(--size-12);
+  width: var(--size-12);
   border-radius: 50%;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 3.75rem;
-  height: 2rem;
+  width: var(--size-15);
+  height: var(--size-8);
 }
 
 .switch input {
@@ -116,10 +122,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: var(--size-6);
+  width: var(--size-6);
+  left: var(--size-1);
+  bottom: var(--size-1);
   background-color: var(--white);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -140,7 +146,7 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 2rem;
+  border-radius: var(--size-8);
 }
 
 .slider.round:before {
