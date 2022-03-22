@@ -97,6 +97,16 @@
   display: block;
 }
 
+/*Grids*/
+.container_component .grid {
+  width: 100%;
+}
+
+.container_component .grid > * {
+  border: 1px solid var(--border);
+  min-height: 100px;
+}
+
 @media only screen and (max-width: 1024px) {
   .doc_main__content {
     grid-column: 1/-1;
