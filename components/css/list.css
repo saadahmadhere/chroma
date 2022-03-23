@@ -1,0 +1,16 @@
+.list_style_none,
+.stacked_list {
+  list-style: none;
+}
+
+.list_inline {
+  display: flex;
+}
+
+.list_style_circle {
+  list-style-type: circle;
+}
+
+.list_style_square {
+  list-style-type: square;
+}
