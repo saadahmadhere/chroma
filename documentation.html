@@ -84,6 +84,9 @@
             <li class="sidebar_component">
               <a href="#navigation">Navigation</a>
             </li>
+            <li class="sidebar_component">
+              <a href="#grid">Grids</a>
+            </li>
           </ul>
         </div>
       </aside>
@@ -1026,6 +1029,108 @@
           </div>
           <div class="code_snippet">
             <script src="https://gist.github.com/saadahmadhere/698772a1028b874944827838d9c706b1.js"></script>
+          </div>
+        </section>
+
+        <section id="grid" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Grids</h1>
+            <p class="component_brief">
+              CSS Grid Layout is a two-dimensional layout system for the web. It
+              lets you lay content out in rows and columns.
+            </p>
+          </div>
+          <div class="component_subtitle">Grid 50-50 layout</div>
+          <div class="component_description">
+            Use grid 50-50 layout when you want to split your content into 2
+            columns. Use
+            <code class="code_text">grid</code>
+            class to set the display to grid,
+            <code class="code_text">grid_50_50</code>
+            to set the layout to 50:50, and
+            <code class="code_text">gap_1</code>
+            class to add a gap of 16px.
+          </div>
+          <div class="container_component">
+            <div class="grid grid_50_50 gap_1">
+              <div class="txt_center">Column1</div>
+              <div class="txt_center">Column 2</div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/594797f62ba73bd229ed730e45eecb15.js"></script>
+          </div>
+
+          <div class="component_subtitle">Grid 3 column layout</div>
+          <div class="component_description">
+            Three column grid layouts are used when you want to split your
+            content into 3 columns. Use
+            <code class="code_text">grid_three_column</code>
+            class to make the grid display 3 columns layout,
+            <code class="code_text">gap_y_1</code>
+            to give a row gap of 16px, and
+            <code class="code_text">gap_x_1</code>
+            class to give a column gap of 16px.
+          </div>
+          <div class="container_component">
+            <div class="grid grid_three_column gap_y_1 gap_x_1">
+              <div class="txt_center">Column 1</div>
+              <div class="txt_center">Column 2</div>
+              <div class="txt_center">Column 3</div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/8dc0d74410899932a796033c0d55ab50.js"></script>
+          </div>
+
+          <div class="component_subtitle">Grid 4 column layout</div>
+          <div class="component_description">
+            Four column grid layouts are used when you want to split your
+            content into 4 columns. Use
+            <code class="code_text">grid_four_column</code>
+            class to make the grid display 4 columns layout.
+          </div>
+          <div class="container_component">
+            <div class="grid grid_four_column gap_y_1 gap_x_1">
+              <div class="txt_center">Column 1</div>
+              <div class="txt_center">Column 2</div>
+              <div class="txt_center">Column 3</div>
+              <div class="txt_center">Column 4</div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/e4476c7363102eee99d267b1650605b9.js"></script>
+          </div>
+          <div class="component_subtitle">Grid 20-80 layout</div>
+          <div class="component_description">
+            20-80 layouts display the section into 2 parts, in the ratio of 1:5
+            and 4:5 respectively. Use
+            <code class="code_text">grid_20_80</code>
+            class to apply this layout.
+          </div>
+          <div class="container_component">
+            <div class="grid grid_20_80 gap_1">
+              <div class="txt_center">Column1</div>
+              <div class="txt_center">Column 2</div>
+            </div>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/4f2a0b8d37b6be9ddbdaaeae6e0e4698.js"></script>
+          </div>
+          <div class="component_subtitle">Grid 30-70 layout</div>
+          <div class="component_description">
+            30-70 layouts are just like 20-80 layouts, except that they divide
+            the section into the ratio of 3:10 and 7:10 respectively. Use
+            <code class="code_text">grid_30_70</code>
+            class to apply this layout.
+          </div>
+          <div class="container_component">
+            <div class="grid grid_30_70 gap_1">
+              <div class="txt_center">Column1</div>
+              <div class="txt_center">Column 2</div>
+            </div>
+          </div>
+          <div class="code_snippet"><script src="https://gist.github.com/saadahmadhere/1189d791c3d203da4d0511214b07825b.js"></script></div>
           </div>
         </section>
       </main>
