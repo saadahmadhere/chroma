@@ -68,7 +68,11 @@ To use styles provided by Chroma, add the following `link` element in your `head
   - Stacked snackbar
 
 - [Navigation](https://chroma-ui.netlify.app/documentation.html#navigation)
+
   - Simple Navigation
+
+- [Grids](https://chroma-ui.netlify.app/documentation.html#navigation)
+  - Grid Layout
 
 ---
 
