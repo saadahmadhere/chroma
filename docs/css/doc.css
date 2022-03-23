@@ -107,6 +107,33 @@
   min-height: 6.25rem;
 }
 
+/* Lists */
+.container_component .list_container {
+  border-radius: 5px;
+  background-color: var(--gray-700);
+  padding: var(--size-4) var(--size-8) var(--size-4) var(--size-10);
+}
+
+.container_component .styled_list {
+  margin-bottom: var(--size-4);
+}
+
+.container_component .list_inline_item:not(:last-of-type) {
+  margin-right: var(--size-6);
+}
+
+.container_component .list_inline > * {
+  margin-right: var(--size-6);
+}
+
+.container_component .stacked_list {
+  width: 100%;
+}
+
+.container_component .stacked_list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .doc_main__content {
     grid-column: 1/-1;
