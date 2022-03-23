@@ -27,7 +27,7 @@
         <div class="nav_close">
           <i class="fas fa-times fa-2x"></i>
         </div>
-        <ul class="nav_links_about flex">
+        <ul class="nav_links_about list_style_none flex">
           <li class="nav_item">
             <a href="./index.html">Home</a>
           </li>
@@ -35,7 +35,7 @@
             <a href="./documentation.html">Documentation</a>
           </li>
         </ul>
-        <ul class="nav_links_social flex">
+        <ul class="nav_links_social list_style_none flex">
           <li class="nav_item">
             <a href="https://github.com/saadahmadhere" target="_blank">
               <i class="fab fa-github fa-lg"></i>
@@ -86,6 +86,9 @@
             </li>
             <li class="sidebar_component">
               <a href="#grid">Grids</a>
+            </li>
+            <li class="sidebar_component">
+              <a href="#list">Lists</a>
             </li>
           </ul>
         </div>
@@ -1006,7 +1009,7 @@
                   <span class="material-icons outlined">search</span>
                 </button>
               </div>
-              <ul class="navbar_links flex">
+              <ul class="navbar_links list_style_none flex">
                 <li>
                   <a class="btn btn_primary btn_sm">Login</a>
                 </li>
@@ -1130,7 +1133,135 @@
               <div class="txt_center">Column 2</div>
             </div>
           </div>
-          <div class="code_snippet"><script src="https://gist.github.com/saadahmadhere/1189d791c3d203da4d0511214b07825b.js"></script></div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/1189d791c3d203da4d0511214b07825b.js"></script>
+          </div>
+        </section>
+        <section id="list" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Lists</h1>
+            <p class="component_brief">
+              Lists organise similar kind of data in the same place. They come
+              handy in many places like nav bars, stacked notifications, etc.
+            </p>
+          </div>
+          <div class="component_subtitle">Unordered bullet lists</div>
+          <div class="component_description">
+            Use
+            <code class="code_text">list_style_square</code>
+            class to make the bullets square, and
+            <code class="code_text">list_style_circle</code>
+            to make them circular. Please note that you need not to use
+            <code class="code_text">list_container</code>
+            and
+            <code class="code_text">styled_list</code>
+            class. These are used just to make things clear.
+          </div>
+          <div class="container_component">
+            <ul class="styled_list list_container gray_subtitle">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+            <ul
+              class="styled_list list_style_square list_container gray_subtitle">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+            <ul
+              class="styled_list list_style_circle list_container gray_subtitle">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/6be486f173d47713052e844aef5ea70b.js"></script>
+          </div>
+          <div class="component_subtitle">List without bullets</div>
+          <div class="component_description">
+            Use class
+            <code class="code_text">list_style_none</code>
+            to remove the bullets from the lists.
+          </div>
+          <div class="container_component">
+            <ul class="styled_list list_style_none list_container">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/e2d5857e37d58478cc4a5ffed59077ec.js"></script>
+          </div>
+          <div class="component_subtitle">Inline lists</div>
+          <div class="component_description">
+            Use class
+            <code class="code_text">list_inline</code>
+            to make your list inline.
+          </div>
+          <div class="container_component">
+            <ul class="list_style_none list_inline">
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+            </ul>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/ff12a93709a51d18a90201617fd37dea.js"></script>
+          </div>
+          <div class="component_subtitle">Stacked list</div>
+          <div class="component_description">
+            Use class
+            <code class="code_text">stacked_list</code>
+            to make your components stacked one over another.
+          </div>
+          <div class="container_component">
+            <ul class="stacked_list">
+              <li>
+                <div class="snackbar_notification flex">
+                  <span class="h5 gray_title">
+                    Something went wrong! Try again in 5 minutes.
+                  </span>
+                  <div class="snackbar_buttons flex">
+                    <button class="span_button btn h6">Retry</button>
+                    <button class="btn">
+                      <span class="material-icons round close">close</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="snackbar_notification flex">
+                  <span class="h5 gray_title">
+                    Something went wrong! Try again in 5 minutes.
+                  </span>
+                  <div class="snackbar_buttons flex">
+                    <button class="span_button btn h6">Retry</button>
+                    <button class="btn">
+                      <span class="material-icons round close">close</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="snackbar_notification flex">
+                  <span class="h5 gray_title">
+                    Something went wrong! Try again in 5 minutes.
+                  </span>
+                  <div class="snackbar_buttons flex">
+                    <button class="span_button btn h6">Retry</button>
+                    <button class="btn">
+                      <span class="material-icons round close">close</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/63606065e25cb742aa929cd9e878db92.js"></script>
           </div>
         </section>
       </main>
