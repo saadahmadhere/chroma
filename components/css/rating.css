@@ -1,0 +1,19 @@
+.rating_star_icon {
+  color: var(--rating-star-unfilled);
+}
+
+.rating_star_input:enabled + .rating_star_icon:hover {
+  cursor: pointer;
+  color: var(--rating-star-hover);
+}
+
+.rating_star_input {
+  width: 0;
+  margin: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.rating_star_input:checked + .rating_star_icon {
+  color: var(--golden-rating);
+}
