@@ -36,9 +36,11 @@
   --info-btn: #31d2f2;
   --btn-black-text: #000000cc;
 
-  /* Cards */
+  /* Rating */
   --rating-bg: #cec8c8fa;
   --golden-rating: #ff9529;
+  --rating-star-hover: #ffb400;
+  --rating-star-unfilled: #33323242;
 
   /* Gray */
   --gray-100: #181818;
