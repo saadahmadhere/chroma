@@ -22,6 +22,7 @@
 @import url("./grid.css");
 @import url("./list.css");
 @import url("./rating.css");
+@import url("./modal.css");
 
 html {
   font-size: 100%;

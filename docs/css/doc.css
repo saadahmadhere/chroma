@@ -134,6 +134,11 @@
   margin-bottom: 1rem;
 }
 
+/* Modal */
+.container_component .modal .h2 {
+  margin-bottom: var(--size-4);
+}
+
 @media only screen and (max-width: 1024px) {
   .doc_main__content {
     grid-column: 1/-1;
