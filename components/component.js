@@ -46,3 +46,32 @@ allStars.forEach((star, id) => {
     }
   });
 });
+
+//Modal
+const modalContainer = document.querySelector(".modal_container");
+const btnCloseModal = document.querySelector(".close_modal");
+const btnsOpenModal = document.querySelectorAll(".show_modal");
+
+const showModal = () => {
+  modalContainer.classList.add("modal_active");
+  document.body.style.overflow = "hidden";
+};
+
+const hideModal = () => {
+  modalContainer.classList.remove("modal_active");
+  document.body.style.overflow = "visible";
+};
+
+btnsOpenModal.forEach((openButton) => {
+  openButton.addEventListener("click", showModal);
+});
+
+btnCloseModal.addEventListener("click", hideModal);
+
+modalContainer.addEventListener("click", hideModal);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modalContainer.classList.contains("modal_active")) {
+    hideModal();
+  }
+});
