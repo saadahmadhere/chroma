@@ -29,3 +29,20 @@ formValidate.forEach((form) => {
     }
   });
 });
+
+//Rating
+const allStars = document.querySelectorAll(".rating_star_input");
+
+allStars.forEach((star, id) => {
+  star.addEventListener("change", () => {
+    if (allStars[id].checked) {
+      for (let i = id; i >= 0; i--) {
+        allStars[i].checked = true;
+      }
+    } else {
+      for (let i = id; i < allStars.length; i++) {
+        allStars[i].checked = false;
+      }
+    }
+  });
+});
