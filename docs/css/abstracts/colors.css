@@ -3,13 +3,14 @@
   --link: #777777;
   --link-hover: #4993cf;
   --primary-text-color: #396597;
-  --border: #44444417;
+  --border: #2222224d;
   --border-dark: #24222285;
   --heading: #444444;
   --content: #495057;
   --box-shadow: #00000009;
   --code-snippet-bg: #cec8c8;
   --toggle-background: #ccc;
+  --code-text-background: #daecf8;
 
   /* Badges */
   --badge-red: #e20606;
@@ -44,8 +45,8 @@
 
   /* Gray */
   --gray-100: #181818;
-  --gray-200: #404040;
-  --gray-300: #505050;
+  --gray-200: #282828;
+  --gray-300: #404040;
   --gray-400: #808080;
   --gray-500: #a0a0a0;
   --gray-600: #bebebe;

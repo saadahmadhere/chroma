@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?Montserrat:wght@600&family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("../../docs/css/reset.css");
-@import url("../docs/css/base");
 @import url("../../docs/css/abstracts/colors.css");
 @import url("../../docs/css/abstracts/variables.css");
-@import url("../../docs/css/utilities.css");
+@import url("../../docs/css/utilities/utilities.css");
 @import url("./typography.css");
 @import url("../../docs/css/navbar.css");
 @import url("../../docs/css/sidebar.css");

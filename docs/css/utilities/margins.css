@@ -1,0 +1,155 @@
+.m_auto {
+  margin: auto;
+}
+
+/* Margins Horizontal */
+.mx_auto {
+  margin: 0 auto;
+}
+
+.mx_1 {
+  margin-left: var(--size-1);
+  margin-right: var(--size-1);
+}
+
+.mx_2 {
+  margin-left: var(--size-2);
+  margin-right: var(--size-2);
+}
+
+.mx_3 {
+  margin-left: var(--size-3);
+  margin-right: var(--size-3);
+}
+
+.mx_4 {
+  margin-left: var(--size-4);
+  margin-right: var(--size-4);
+}
+
+.mx_5 {
+  margin-left: var(--size-5);
+  margin-right: var(--size-5);
+}
+
+.mx_6 {
+  margin-left: var(--size-6);
+  margin-right: var(--size-6);
+}
+
+.mx_7 {
+  margin-left: var(--size-7);
+  margin-right: var(--size-7);
+}
+
+.mx_8 {
+  margin-left: var(--size-8);
+  margin-right: var(--size-8);
+}
+
+/* Margins Vertical */
+.my_1 {
+  margin-top: var(--size-1);
+  margin-bottom: var(--size-1);
+}
+
+.my_2 {
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-2);
+}
+
+.my_3 {
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-3);
+}
+
+.my_4 {
+  margin-top: var(--size-4);
+  margin-bottom: var(--size-4);
+}
+
+.my_5 {
+  margin-top: var(--size-5);
+  margin-bottom: var(--size-5);
+}
+
+.my_6 {
+  margin-top: var(--size-6);
+  margin-bottom: var(--size-6);
+}
+
+.my_7 {
+  margin-top: var(--size-7);
+  margin-bottom: var(--size-7);
+}
+
+.my_8 {
+  margin-top: var(--size-8);
+  margin-bottom: var(--size-8);
+}
+
+/* Margin-right */
+.mr_1 {
+  margin-right: var(--size-1);
+}
+
+.mr_2 {
+  margin-right: var(--size-2);
+}
+
+.mr_3 {
+  margin-right: var(--size-3);
+}
+
+.mr_4 {
+  margin-right: var(--size-4);
+}
+
+.mr_5 {
+  margin-right: var(--size-5);
+}
+
+.mr_6 {
+  margin-right: var(--size-6);
+}
+
+.mr_7 {
+  margin-right: var(--size-7);
+}
+
+.mr_8 {
+  margin-right: var(--size-8);
+}
+
+/* Margin-left */
+.ml_1 {
+  margin-left: var(--size-1);
+}
+
+.ml_2 {
+  margin-left: var(--size-2);
+}
+
+.ml_3 {
+  margin-left: var(--size-3);
+}
+
+.ml_4 {
+  margin-left: var(--size-4);
+}
+
+.ml_5 {
+  margin-left: var(--size-5);
+}
+
+.ml_6 {
+  margin-left: var(--size-6);
+}
+
+.ml_7 {
+  margin-left: var(--size-7);
+}
+
+.ml_8 {
+  margin-left: var(--size-8);
+}

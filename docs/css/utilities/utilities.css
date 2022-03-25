@@ -1,3 +1,6 @@
+@import url("./margins.css");
+@import url("./padding.css");
+
 .inline {
   display: inline;
 }
