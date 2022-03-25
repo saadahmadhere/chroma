@@ -146,7 +146,6 @@
 
 .container_component .price_field input {
   width: 80%;
-  /* display: block; */
 }
 
 @media only screen and (max-width: 1024px) {
