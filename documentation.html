@@ -96,6 +96,9 @@
             <li class="sidebar_component">
               <a href="#modal">Modal</a>
             </li>
+            <li class="sidebar_component">
+              <a href="#slider">Slider</a>
+            </li>
           </ul>
         </div>
       </aside>
@@ -1374,6 +1377,64 @@
 
           <div class="code_snippet">
             <script src="https://gist.github.com/saadahmadhere/ea1407f3cc55a996c35481ad24d08625.js"></script>
+          </div>
+        </section>
+
+        <section id="slider" class="section">
+          <div class="section_brief">
+            <h1 class="component_title">Slider</h1>
+            <p class="component_brief">
+              Sliders can be used to change the value of granular elements like
+              volume, price, etc.
+            </p>
+          </div>
+          <div class="component_subtitle">Slider with price</div>
+          <div class="component_description">
+            Below is an example for price slider. You can set the minimum and
+            maximum price in the min and mix attribute respectively.
+          </div>
+          <div class="container_component">
+            <form
+              name="price_field"
+              oninput="range1value.value = range1.valueAsNumber"
+              class="price_field">
+              <label>
+                Price
+                <input
+                  name="range1"
+                  type="range"
+                  step="100"
+                  min="0"
+                  max="1000"
+                  value="0" />
+              </label>
+              <output name="range1value" for="range1">0</output>
+            </form>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/acc8f8c345421c133d03e0be827dcd36.js"></script>
+          </div>
+          <div class="component_subtitle">Volume slider</div>
+          <div class="container_component">
+            <form
+              name="price_field"
+              oninput="range1value.value = range1.valueAsNumber"
+              class="price_field">
+              <label>
+                <i class="fas fa-volume-up"></i>
+                <input
+                  name="range1"
+                  type="range"
+                  step="10"
+                  min="0"
+                  max="100"
+                  value="0" />
+              </label>
+              <output name="range1value" for="range1">0</output>
+            </form>
+          </div>
+          <div class="code_snippet">
+            <script src="https://gist.github.com/saadahmadhere/e29ceced40cfb04fcb042c650214d355.js"></script>
           </div>
         </section>
       </main>

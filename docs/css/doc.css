@@ -139,6 +139,15 @@
   margin-bottom: var(--size-4);
 }
 
+/* Slider */
+.container_component .price_field {
+  width: 40%;
+}
+
+.container_component .price_field input {
+  width: 80%;
+}
+
 @media only screen and (max-width: 1024px) {
   .doc_main__content {
     grid-column: 1/-1;

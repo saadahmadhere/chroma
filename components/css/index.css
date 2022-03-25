@@ -23,6 +23,7 @@
 @import url("./list.css");
 @import url("./rating.css");
 @import url("./modal.css");
+@import url("./slider.css");
 
 html {
   font-size: 100%;
