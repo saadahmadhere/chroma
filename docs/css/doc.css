@@ -42,13 +42,16 @@
 
 .component_description {
   font-size: 1.125rem;
-  line-height: 1.25em;
+  line-height: 1.75em;
 }
 
 .code_text {
   color: var(--primary-text-color);
   font-size: 1rem;
   letter-spacing: initial;
+  background-color: var(--code-text-background);
+  padding: var(--size-1);
+  border-radius: var(--size-1);
 }
 
 .container_component {
