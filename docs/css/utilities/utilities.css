@@ -1,0 +1,75 @@
+@import url("./margins.css");
+@import url("./padding.css");
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.flex,
+.flex_center,
+.flex_align__start,
+.flex_align__center,
+.flex_align__end,
+.flex_justify__start,
+.flex_justify__center,
+.flex_col,
+.flex_justify__end,
+.flex_col__rev,
+.flex_row,
+.flex_row__rev,
+.flex_wrap {
+  display: flex;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_align__start {
+  align-items: flex-start;
+}
+
+.flex_align__center {
+  align-items: center;
+}
+
+.flex_align__end {
+  align-items: flex-end;
+}
+
+.flex_justify__start {
+  justify-content: flex-start;
+}
+
+.flex_justify__center {
+  justify-content: center;
+}
+
+.flex_justify__end {
+  justify-content: end;
+}
+
+.flex_col {
+  flex-direction: column;
+}
+
+.flex_col__rev {
+  flex-direction: column-reverse;
+}
+
+.flex_row {
+  flex-direction: row;
+}
+
+.flex_row__rev {
+  flex-direction: row-reverse;
+}
