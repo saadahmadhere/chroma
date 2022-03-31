@@ -33,6 +33,82 @@ body {
   letter-spacing: 0.025em;
 }
 
+/* Dark theme */
+body.dark_theme {
+  background-color: #07071b;
+}
+
+body.dark_theme .container_main h1 {
+  color: var(--gray-700);
+}
+
+body.dark_theme .card {
+  box-shadow: var(--size-1) var(--size-1) var(--size-3) #0c0c3a;
+}
+
+body.dark_theme .component_title,
+body.dark_theme .section_brief h1,
+body.dark_theme .sidebar .title,
+body.dark_theme .card h2,
+body.dark_theme .fa-contao {
+  color: var(--primary-color);
+}
+
+body.dark_theme .nav {
+  background-color: #030313;
+}
+
+body.dark_theme .card .action_icons button {
+  background-color: inherit;
+}
+
+body.dark_theme .card .action_icons .icon:hover {
+  background-color: #1a1a64;
+}
+
+body.dark_theme .rating_star_container i {
+  color: var(--gray-500);
+}
+
+body.dark_theme p,
+body.dark_theme .component_subtitle,
+body.dark_theme div,
+body.dark_theme .action_icons .icon {
+  color: var(--gray-600);
+}
+
+body.dark_theme a {
+  color: var(--gray-800);
+}
+
+body.dark_theme .container_component .avatar_text {
+  color: var(--white);
+}
+
+body.dark_theme .sidebar {
+  background-color: #070720;
+}
+body.dark_theme .container_component ul {
+  color: var(--gray-300);
+}
+
+body.dark_theme .container_component .alert {
+  color: var(--gray-300);
+}
+
+body.dark_theme .code_text {
+  background-color: #87acc5;
+  color: #253e5a;
+}
+
+body.dark_theme .container_component {
+  border: 2px solid var(--gray-400);
+}
+
+body.dark_theme .container_component .grid > * {
+  border: 2px solid var(--gray-300);
+}
+
 .main_top,
 .main_bottom {
   flex-wrap: wrap;
