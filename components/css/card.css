@@ -174,9 +174,3 @@
   border-radius: 100%;
   cursor: pointer;
 }
-
-@media only screen and (max-width: 370px) {
-  .action_icons {
-    margin: auto;
-  }
-}
