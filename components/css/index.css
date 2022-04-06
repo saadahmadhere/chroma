@@ -109,6 +109,16 @@ body.dark_theme .container_component .grid > * {
   border: 2px solid var(--gray-300);
 }
 
+body.dark_theme .nav_active {
+  background-color: #030313;
+}
+
+body.dark_theme .nav_active a,
+body.dark_theme .nav_item i,
+body.dark_theme .nav_active .nav_close {
+  color: var(--gray-400);
+}
+
 .main_top,
 .main_bottom {
   flex-wrap: wrap;
@@ -170,6 +180,10 @@ body.dark_theme .container_component .grid > * {
 .image_main {
   max-width: 80%;
   object-fit: cover;
+}
+
+.nav_active {
+  z-index: 3;
 }
 
 #cta_buttons {
